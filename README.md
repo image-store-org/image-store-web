@@ -1,4 +1,8 @@
-[![ci](https://github.com/vartdalen/mvc-java-spring-boot-template/workflows/ci/badge.svg)](https://github.com/vartdalen/mvc-java-spring-boot-template/actions?workflow=ci)
+[![ci](https://github.com/vartdalen/image-store-web/workflows/ci/badge.svg)](https://github.com/vartdalen/image-store-web/actions?workflow=ci)
 
-# mvc-java-spring-boot-template
-Template for MVC Java Spring Boot Dockerized Web Application
+# image-store-web
+Java Spring Boot web server **application**.
+Dockerized.
+Exposes a RESTful API on the **device** that runs the **application**.
+
+The purpose of the **application** is to offer a simple interface for storing images on the **device**.
