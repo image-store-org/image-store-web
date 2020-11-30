@@ -18,7 +18,7 @@ jobs:
           java-version: 11.0.6
           architecture: x64
       - name: Maven package
-        run: mvn -B package --file ./vartdalen/image-store-web/pom.xml
+        run: mvn -B package --file ./image-store-web/pom.xml
       - name: Login to DockerHub
         uses: docker/login-action@v1
         with:
