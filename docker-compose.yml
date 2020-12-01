@@ -1,11 +1,11 @@
 # Not in use (could not find action supporting Docker Compose for CI (GitHub Actions)
 version: '3.7'
 services:
-    image-store-web:
-        container_name: image-store-web
-        build:
-            context: ./image-store-web/
-            dockerfile: Dockerfile
-        image: vartdalen/image-store-web
-        ports:
-            - 8080:8080
+  image-store-web:
+    container_name: image-store-web
+    build:
+      context: ./image-store-web/
+      dockerfile: Dockerfile
+    image: vartdalen/image-store-web
+    ports:
+      - 8080:8080

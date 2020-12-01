@@ -1,12 +1,12 @@
-package com.vartdalen.image.store.controller;
+package com.vartdalen.imagestoreweb.controller;
+
+import com.vartdalen.imagestoreweb.model.Image;
+import com.vartdalen.imagestoreweb.service.ImageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import com.vartdalen.image.store.model.Image;
-import com.vartdalen.image.store.service.ImageService;
 
 import java.util.Comparator;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/images")
@@ -23,7 +23,8 @@ public class ImageController {
             value = "/helloWorld",
             method = RequestMethod.GET
     )
-    public @ResponseBody String helloWorld() {
+    public @ResponseBody
+    String helloWorld() {
         return imageService.helloWorld();
     }
 
@@ -31,7 +32,8 @@ public class ImageController {
             value = "/",
             method = RequestMethod.GET
     )
-    public @ResponseBody List<Image> getImages() {
+    public @ResponseBody
+    List<Image> getImages() {
         return imageService.get();
     }
 
@@ -39,7 +41,8 @@ public class ImageController {
             value = "/{id}",
             method = RequestMethod.GET
     )
-    public @ResponseBody Image getImage(@PathVariable("id") String id) {
+    public @ResponseBody
+    Image getImage(@PathVariable("id") String id) {
         return imageService.get(Long.parseLong(id));
     }
 
@@ -48,7 +51,8 @@ public class ImageController {
             value = "/latest",
             method = RequestMethod.GET
     )
-    public @ResponseBody Image getImage() {
+    public @ResponseBody
+    Image getImage() {
         return imageService
                 .get()
                 .stream()
@@ -70,7 +74,7 @@ public class ImageController {
 
     @DeleteMapping("/{id}")
     public String delete(@PathVariable("id") String id) {
-            imageService.delete(Long.parseLong(id));
+        imageService.delete(Long.parseLong(id));
         return "redirect:/";
     }
 }

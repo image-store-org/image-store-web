@@ -1,5 +1,6 @@
-package com.vartdalen.image.store.service;
-import com.vartdalen.image.store.model.Image;
+package com.vartdalen.imagestoreweb.service;
+
+import com.vartdalen.imagestoreweb.model.Image;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -13,7 +14,8 @@ import java.util.stream.Collectors;
 @Service
 public class ImageService {
 
-    @Value("http://${server.address}:${server.port}/database") String BASE_URL;
+    @Value("http://${server.address}:${server.port}/database")
+    String BASE_URL;
     private final RestTemplate restTemplate = new RestTemplate();
 
     public String helloWorld() {
@@ -27,7 +29,7 @@ public class ImageService {
     }
 
     public Image get(long id) {
-        return restTemplate.getForObject(BASE_URL+"/"+id, Image.class);
+        return restTemplate.getForObject(BASE_URL + "/" + id, Image.class);
     }
 
     public Image post(Image image) {
@@ -36,7 +38,9 @@ public class ImageService {
         return response.getBody();
     }
 
-    public void put(long id, Image image) { restTemplate.put(BASE_URL+"/"+id, image); }
+    public void put(long id, Image image) {
+        restTemplate.put(BASE_URL + "/" + id, image);
+    }
 
     public void delete(long id) {
 //        cascading (otherModelTemplate)
@@ -46,6 +50,6 @@ public class ImageService {
 //                otherModelTemplateService.deleteOtherModelTemplateById(otherModelTemplate.getId());
 //            }
 //        }
-        restTemplate.delete(BASE_URL+"/"+id);
+        restTemplate.delete(BASE_URL + "/" + id);
     }
 }

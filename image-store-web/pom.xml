@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>vartdalen</groupId>
-    <artifactId>image-store</artifactId>
+    <artifactId>image-store-web</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
-    <name>image-store</name>
+    <name>image-store-web</name>
     <description>Java Spring Boot web server. RESTful API image store. Dockerized.</description>
 
     <parent>
