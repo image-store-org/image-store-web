@@ -3,12 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.vartdalen.imagestoreweb</groupId>
-    <artifactId>image-store-web</artifactId>
+    <groupId>com.vartdalen.imagestoresql</groupId>
+    <artifactId>image-store-sql</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
-    <name>image-store-web</name>
-    <description>Java Spring Boot image store web server. RESTful API, Dockerized.</description>
+    <name>image-store-sql</name>
+    <description>Java Spring Boot image store SQL server. RESTful API, Dockerized.</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -50,6 +50,15 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
         </dependency>
     </dependencies>
 

@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="image-store-web-1.0.war">
+    <root id="archive" name="image-store-sql-1.0.war">
       <element id="artifact" artifact-name="image-store-web:war exploded" />
     </root>
   </artifact>

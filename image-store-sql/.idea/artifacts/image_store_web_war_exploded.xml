@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="image-store-web:war exploded">
-    <output-path>$PROJECT_DIR$/target/image-store-web-1.0</output-path>
+    <output-path>$PROJECT_DIR$/target/image-store-sql-1.0</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>
@@ -11,7 +11,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="image-store-web" />
+          <element id="module-output" name="image-store-sql" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-web:2.2.6.RELEASE" />
@@ -50,9 +50,9 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/image-store-web-1.0/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/image-store-sql-1.0/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="image-store-web/web/Web" />
+      <element id="javaee-facet-resources" facet="image-store-sql/web/Web" />
     </root>
   </artifact>
 </component>
