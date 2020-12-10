@@ -59,20 +59,19 @@ public class ImageController {
     }
 
     @PostMapping("/")
-    public String post(@ModelAttribute("image") Image image) {
-        imageService.post(image);
-        return "redirect:/";
+    public Image post(@ModelAttribute("image") Image image) {
+        return imageService.post(image);
     }
 
     @PutMapping("/")
     public String put(@ModelAttribute("image") Image image) {
-        imageService.put(image.getId(), image);
+        imageService.put(image);
         return "redirect:/";
     }
 
     @DeleteMapping("/{id}")
     public String delete(@PathVariable("id") String id) {
-            imageService.delete(Long.parseLong(id));
+        imageService.delete(Long.parseLong(id));
         return "redirect:/";
     }
 }

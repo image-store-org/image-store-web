@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 @Service
 public class ImageService {
 
-    @Value("http://${server.address}:${server.datasource.port}/images") String BASE_URL;
+    @Value("http://${server.address}:${server.datasource.port}/images/") String BASE_URL;
     private final RestTemplate restTemplate = new RestTemplate();
 
     public String helloWorld() {
@@ -27,7 +27,7 @@ public class ImageService {
     }
 
     public Image get(long id) {
-        return restTemplate.getForObject(BASE_URL+"/"+id, Image.class);
+        return restTemplate.getForObject(BASE_URL+id, Image.class);
     }
 
     public Image post(Image image) {
@@ -36,9 +36,9 @@ public class ImageService {
         return response.getBody();
     }
 
-    public void put(long id, Image image) { restTemplate.put(BASE_URL+"/"+id, image); }
+    public void put(Image image) { restTemplate.put(BASE_URL+image.getId(), image); }
 
     public void delete(long id) {
-        restTemplate.delete(BASE_URL+"/"+id);
+        restTemplate.delete(BASE_URL+id);
     }
 }
