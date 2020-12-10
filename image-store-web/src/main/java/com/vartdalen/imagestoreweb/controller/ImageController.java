@@ -1,12 +1,11 @@
-package com.vartdalen.image.store.controller;
+package com.vartdalen.imagestoreweb.controller;
+import com.vartdalen.imagestoreweb.model.Image;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import com.vartdalen.image.store.model.Image;
-import com.vartdalen.image.store.service.ImageService;
+import com.vartdalen.imagestoreweb.service.ImageService;
 
 import java.util.Comparator;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/images")
@@ -23,32 +22,35 @@ public class ImageController {
             value = "/helloWorld",
             method = RequestMethod.GET
     )
-    public @ResponseBody String helloWorld() {
+    public String helloWorld() {
         return imageService.helloWorld();
     }
 
+    @ResponseBody
     @RequestMapping(
             value = "/",
             method = RequestMethod.GET
     )
-    public @ResponseBody List<Image> getImages() {
+    public List<Image> getImages() {
         return imageService.get();
     }
 
+    @ResponseBody
     @RequestMapping(
             value = "/{id}",
             method = RequestMethod.GET
     )
-    public @ResponseBody Image getImage(@PathVariable("id") String id) {
+    public Image getImage(@PathVariable("id") String id) {
         return imageService.get(Long.parseLong(id));
     }
 
     @SuppressWarnings("OptionalGetWithoutIsPresent")
+    @ResponseBody
     @RequestMapping(
             value = "/latest",
             method = RequestMethod.GET
     )
-    public @ResponseBody Image getImage() {
+    public Image getImage() {
         return imageService
                 .get()
                 .stream()

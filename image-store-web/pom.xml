@@ -3,12 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>vartdalen</groupId>
-    <artifactId>image-store</artifactId>
+    <groupId>com.vartdalen.imagestoreweb</groupId>
+    <artifactId>image-store-web</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
-    <name>image-store</name>
-    <description>Java Spring Boot web server. RESTful API image store. Dockerized.</description>
+    <name>image-store-web</name>
+    <description>Java Spring Boot image store web server. RESTful API, Dockerized.</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -35,12 +35,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -51,6 +45,11 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
