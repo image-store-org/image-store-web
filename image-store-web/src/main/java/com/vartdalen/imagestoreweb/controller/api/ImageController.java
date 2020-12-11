@@ -1,7 +1,7 @@
-package com.vartdalen.imagestoreweb.controller;
-import com.vartdalen.imagestoreweb.model.Image;
+package com.vartdalen.imagestoreweb.controller.api;
+import com.vartdalen.imagestoreweb.model.api.Image;
 import org.springframework.web.bind.annotation.*;
-import com.vartdalen.imagestoreweb.service.ImageService;
+import com.vartdalen.imagestoreweb.service.api.ImageService;
 
 import java.util.Comparator;
 import java.util.List;
