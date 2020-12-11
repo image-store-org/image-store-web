@@ -1,6 +1,5 @@
 package com.vartdalen.imagestoreweb.controller;
 import com.vartdalen.imagestoreweb.model.Image;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import com.vartdalen.imagestoreweb.service.ImageService;
 
@@ -13,7 +12,6 @@ public class ImageController {
 
     private final ImageService imageService;
 
-    @Autowired
     public ImageController(ImageService imageService) {
         this.imageService = imageService;
     }
