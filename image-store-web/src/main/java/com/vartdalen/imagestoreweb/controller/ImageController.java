@@ -16,14 +16,6 @@ public class ImageController {
         this.imageService = imageService;
     }
 
-    @RequestMapping(
-            value = "/helloWorld",
-            method = RequestMethod.GET
-    )
-    public String helloWorld() {
-        return imageService.helloWorld();
-    }
-
     @ResponseBody
     @RequestMapping(
             value = "/",

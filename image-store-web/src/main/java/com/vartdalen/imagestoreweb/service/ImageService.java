@@ -16,10 +16,6 @@ public class ImageService {
     @Value("http://${server.address}:${server.datasource.port}/images/") String BASE_URL;
     private final RestTemplate restTemplate = new RestTemplate();
 
-    public String helloWorld() {
-        return "Hello, World! Regards image-store-web.";
-    }
-
     public List<Image> get() {
         return Arrays
                 .stream(Objects.requireNonNull(restTemplate.getForObject(BASE_URL, Image[].class)))
