@@ -17,29 +17,20 @@ public class ImageController {
     }
 
     @ResponseBody
-    @RequestMapping(
-            value = "/",
-            method = RequestMethod.GET
-    )
+    @GetMapping("/")
     public List<Image> getImages() {
         return imageService.get();
     }
 
     @ResponseBody
-    @RequestMapping(
-            value = "/{id}",
-            method = RequestMethod.GET
-    )
+    @GetMapping("/{id}")
     public Image getImage(@PathVariable("id") String id) {
         return imageService.get(Long.parseLong(id));
     }
 
     @SuppressWarnings("OptionalGetWithoutIsPresent")
     @ResponseBody
-    @RequestMapping(
-            value = "/latest",
-            method = RequestMethod.GET
-    )
+    @GetMapping("/latest")
     public Image getImage() {
         return imageService
                 .get()
