@@ -13,7 +13,9 @@ import java.util.stream.Collectors;
 @Service
 public class ImageService {
 
-    @Value("http://${server.address}:${server.datasource.port}/images/") String BASE_URL;
+    @Value("http://${server.address}:${server.datasource.port}/images/")
+    private String BASE_URL;
+
     private final RestTemplate restTemplate = new RestTemplate();
 
     public List<Image> get() {
