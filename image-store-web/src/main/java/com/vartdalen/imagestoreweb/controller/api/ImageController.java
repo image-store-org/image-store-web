@@ -1,7 +1,7 @@
-package com.vartdalen.imagestoreweb.controller;
-import com.vartdalen.imagestoreweb.model.Image;
+package com.vartdalen.imagestoreweb.controller.api;
+import com.vartdalen.imagestoreweb.model.api.Image;
 import org.springframework.web.bind.annotation.*;
-import com.vartdalen.imagestoreweb.service.ImageService;
+import com.vartdalen.imagestoreweb.service.api.ImageService;
 
 import java.util.Comparator;
 import java.util.List;
@@ -17,29 +17,20 @@ public class ImageController {
     }
 
     @ResponseBody
-    @RequestMapping(
-            value = "/",
-            method = RequestMethod.GET
-    )
+    @GetMapping("/")
     public List<Image> getImages() {
         return imageService.get();
     }
 
     @ResponseBody
-    @RequestMapping(
-            value = "/{id}",
-            method = RequestMethod.GET
-    )
+    @GetMapping("/{id}")
     public Image getImage(@PathVariable("id") String id) {
         return imageService.get(Long.parseLong(id));
     }
 
     @SuppressWarnings("OptionalGetWithoutIsPresent")
     @ResponseBody
-    @RequestMapping(
-            value = "/latest",
-            method = RequestMethod.GET
-    )
+    @GetMapping("/latest")
     public Image getImage() {
         return imageService
                 .get()
