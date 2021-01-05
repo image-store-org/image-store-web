@@ -34,7 +34,7 @@ public class ImageService {
         return response.getBody();
     }
 
-    public void put(Image image) { restTemplate.put(BASE_URL+image.getId(), image); }
+    public void put(long id, Image image) { restTemplate.put(BASE_URL+id, image); }
 
     public void delete(long id) {
         restTemplate.delete(BASE_URL+id);

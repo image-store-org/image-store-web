@@ -1,5 +1,7 @@
 package com.vartdalen.imagestoreweb.controller;
 import com.vartdalen.imagestoreweb.model.Image;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.vartdalen.imagestoreweb.service.ImageService;
 
@@ -18,41 +20,43 @@ public class ImageController {
 
     @ResponseBody
     @GetMapping("")
-    public List<Image> get() {
-        return imageService.get();
-    }
+    public ResponseEntity<List<Image>> get() { return new ResponseEntity<>(imageService.get(), HttpStatus.OK); }
 
     @ResponseBody
     @GetMapping("/{id}")
-    public Image get(@PathVariable("id") String id) {
-        return imageService.get(Long.parseLong(id));
+    public ResponseEntity<Image> get(@PathVariable long id) {
+        return new ResponseEntity<>(imageService.get(id), HttpStatus.OK);
     }
 
     @SuppressWarnings("OptionalGetWithoutIsPresent")
     @ResponseBody
     @GetMapping("/latest")
-    public Image getLatest() {
-        return imageService
+    public ResponseEntity<Image> getLatest() {
+        return new ResponseEntity<>(imageService
                 .get()
                 .stream()
                 .min(Comparator.comparing(Image::getCreated))
-                .get();
+                .get(),
+                HttpStatus.OK);
     }
 
+    @ResponseBody
     @PostMapping("")
-    public Image post(@ModelAttribute("image") Image image) {
-        return imageService.post(image);
+    public ResponseEntity<Image> post(@RequestBody Image image) {
+        return new ResponseEntity<>(imageService.post(image), HttpStatus.OK);
     }
 
-    @PutMapping("/")
-    public String put(@ModelAttribute("image") Image image) {
-        imageService.put(image);
-        return "redirect:/";
+    @ResponseBody
+    @PutMapping("/{id}")
+    public ResponseEntity<Image> put(@PathVariable long id, @RequestBody Image image) {
+        imageService.put(id, image);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
+    @ResponseBody
     @DeleteMapping("/{id}")
-    public String delete(@PathVariable("id") String id) {
-        imageService.delete(Long.parseLong(id));
-        return "redirect:/";
+    public ResponseEntity<Void> delete(@PathVariable long id) {
+        imageService.delete(id);
+        return ResponseEntity.noContent().build();
     }
 }
