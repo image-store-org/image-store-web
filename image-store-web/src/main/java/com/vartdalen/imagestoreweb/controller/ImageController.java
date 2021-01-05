@@ -7,7 +7,7 @@ import java.util.Comparator;
 import java.util.List;
 
 @RestController
-@RequestMapping("/images")
+@RequestMapping("/api/images")
 public class ImageController {
 
     private final ImageService imageService;
@@ -17,21 +17,21 @@ public class ImageController {
     }
 
     @ResponseBody
-    @GetMapping("/")
-    public List<Image> getImages() {
+    @GetMapping("")
+    public List<Image> get() {
         return imageService.get();
     }
 
     @ResponseBody
     @GetMapping("/{id}")
-    public Image getImage(@PathVariable("id") String id) {
+    public Image get(@PathVariable("id") String id) {
         return imageService.get(Long.parseLong(id));
     }
 
     @SuppressWarnings("OptionalGetWithoutIsPresent")
     @ResponseBody
     @GetMapping("/latest")
-    public Image getImage() {
+    public Image getLatest() {
         return imageService
                 .get()
                 .stream()
@@ -39,7 +39,7 @@ public class ImageController {
                 .get();
     }
 
-    @PostMapping("/")
+    @PostMapping("")
     public Image post(@ModelAttribute("image") Image image) {
         return imageService.post(image);
     }
