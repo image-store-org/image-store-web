@@ -1,5 +1,5 @@
-package com.vartdalen.imagestoreweb.service.api;
-import com.vartdalen.imagestoreweb.model.api.Image;
+package com.vartdalen.imagestoreweb.service;
+import com.vartdalen.imagestoreweb.model.Image;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;

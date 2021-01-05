@@ -1,4 +1,4 @@
-package com.vartdalen.imagestoreweb.model.api;
+package com.vartdalen.imagestoreweb.model;
 
 import java.sql.Timestamp;
 
