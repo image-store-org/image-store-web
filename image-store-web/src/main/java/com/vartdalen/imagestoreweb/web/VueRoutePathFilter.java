@@ -13,8 +13,14 @@ import java.util.Arrays;
 public class VueRoutePathFilter implements WebFilter {
 
     private final String[] BOOT_PATHS = {
-            "/actuator",
-            "/api",
+            //data
+            "/actuator",                //  /health, /info
+            "/api",                     //  /images
+            "/v2",                      //  /api-docs
+            "/swagger-ui",              //  /index.html
+
+            //static
+            "/swagger-resources",
             "/js",
             "/css",
             "/img",
