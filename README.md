@@ -14,3 +14,24 @@ The purpose of the **application** is to offer a web interface for storing and a
 SQL database RESTful API web application: https://github.com/vartdalen/image-store-sql
 
 Dockerhub: https://hub.docker.com/repository/docker/vartdalen/image-store-web
+
+## Documentation
+
+### Exposed paths
+
+#### Data
+```
+"/actuator",                //  /health, /info
+"/api",                     //  /images
+"/v2",                      //  /api-docs
+"/swagger-ui",              //  /index.html
+```
+
+#### Static
+```
+"/swagger-resources",
+"/js",
+"/css",
+"/img",
+"/favicon.ico"
+```
