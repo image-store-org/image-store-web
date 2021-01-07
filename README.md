@@ -11,9 +11,10 @@ The purpose of the **application** is to offer a web interface for storing and a
 
 ## Useful links
 
-SQL database RESTful API web application: https://github.com/vartdalen/image-store-sql
-
-Dockerhub: https://hub.docker.com/repository/docker/vartdalen/image-store-web
+| Description | Link |
+| ------:| -----------:|
+| SQL database web application: | https://github.com/vartdalen/image-store-sql
+| Dockerhub: | https://hub.docker.com/repository/docker/vartdalen/image-store-web
 
 ## Documentation
 
