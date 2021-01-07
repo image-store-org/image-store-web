@@ -1,33 +1,53 @@
 package com.vartdalen.imagestoreweb.model;
 
-import java.sql.Timestamp;
+import com.vartdalen.imagestoreweb.model.enumerator.ImageCategory;
+import com.vartdalen.imagestoreweb.model.enumerator.ImageOrientation;
+
+import javax.validation.constraints.NotNull;
+import java.time.LocalDateTime;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Image {
+    @NotNull
     private long id;
+
+    @NotNull
     private String title;
-    private String category;
+
+    @NotNull
+    private ImageOrientation orientation;
+
+    @NotNull
+    private Set<ImageCategory> categories;
+
+    @NotNull
     private byte[] bytes;
-    private Timestamp created;
+
+    private LocalDateTime created;
 
     public Image() {}
 
-    public Image(long id, String title, String category, byte[] bytes, Timestamp created) {
+    public Image(long id, String title, ImageOrientation orientation, ImageCategory[] categories, byte[] bytes) {
         this.id = id;
         this.title = title;
-        this.category = category;
+        this.orientation = orientation;
+        this.categories = new HashSet<>(Arrays.asList(categories));
         this.bytes = bytes;
-        this.created = created;
     }
 
     public long getId() { return id; }
     public String getTitle() { return title; }
-    public String getCategory() { return category; }
+    public ImageOrientation getOrientation() { return orientation; }
+    public Set<ImageCategory> getCategories() { return categories; }
     public byte[] getBytes() { return bytes; }
-    public Timestamp getCreated() { return created; }
+    public LocalDateTime getCreated() { return created; }
 
     public void setId(long id) { this.id = id; }
     public void setTitle(String title) { this.title = title; }
-    public void setCategory(String category) { this.category = category; }
+    public void setOrientation(ImageOrientation orientation) { this.orientation = orientation; }
+    public void setCategories(ImageCategory[] categories) { this.categories = new HashSet<>(Arrays.asList(categories)); }
     public void setBytes(byte[] bytes) { this.bytes = bytes; }
-    public void setCreated(Timestamp created) { this.created = created; }
 }
+

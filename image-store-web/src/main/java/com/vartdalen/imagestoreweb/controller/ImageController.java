@@ -1,6 +1,7 @@
 package com.vartdalen.imagestoreweb.controller;
 import com.vartdalen.imagestoreweb.model.Image;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.vartdalen.imagestoreweb.service.ImageService;
 
@@ -8,70 +9,54 @@ import java.util.Comparator;
 import java.util.List;
 
 @RestController
-@RequestMapping("/images")
+@RequestMapping("/api/images")
 public class ImageController {
 
     private final ImageService imageService;
 
-    @Autowired
     public ImageController(ImageService imageService) {
         this.imageService = imageService;
     }
 
-    @RequestMapping(
-            value = "/helloWorld",
-            method = RequestMethod.GET
-    )
-    public String helloWorld() {
-        return imageService.helloWorld();
-    }
+    @ResponseBody
+    @GetMapping("")
+    public ResponseEntity<List<Image>> get() { return new ResponseEntity<>(imageService.get(), HttpStatus.OK); }
 
     @ResponseBody
-    @RequestMapping(
-            value = "/",
-            method = RequestMethod.GET
-    )
-    public List<Image> getImages() {
-        return imageService.get();
-    }
-
-    @ResponseBody
-    @RequestMapping(
-            value = "/{id}",
-            method = RequestMethod.GET
-    )
-    public Image getImage(@PathVariable("id") String id) {
-        return imageService.get(Long.parseLong(id));
+    @GetMapping("/{id}")
+    public ResponseEntity<Image> get(@PathVariable long id) {
+        return new ResponseEntity<>(imageService.get(id), HttpStatus.OK);
     }
 
     @SuppressWarnings("OptionalGetWithoutIsPresent")
     @ResponseBody
-    @RequestMapping(
-            value = "/latest",
-            method = RequestMethod.GET
-    )
-    public Image getImage() {
-        return imageService
+    @GetMapping("/latest")
+    public ResponseEntity<Image> getLatest() {
+        return new ResponseEntity<>(imageService
                 .get()
                 .stream()
                 .min(Comparator.comparing(Image::getCreated))
-                .get();
+                .get(),
+                HttpStatus.OK);
     }
 
-    @PostMapping("/")
-    public Image post(@ModelAttribute("image") Image image) {
-        return imageService.post(image);
+    @ResponseBody
+    @PostMapping("")
+    public ResponseEntity<Image> post(@RequestBody Image image) {
+        return new ResponseEntity<>(imageService.post(image), HttpStatus.OK);
     }
 
-    @PutMapping("/")
-    public String put(@ModelAttribute("image") Image image) {
-        imageService.put(image);
-        return "redirect:/";
+    @ResponseBody
+    @PutMapping("/{id}")
+    public ResponseEntity<Image> put(@PathVariable long id, @RequestBody Image image) {
+        imageService.put(id, image);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
+    @ResponseBody
     @DeleteMapping("/{id}")
-    public String delete(@PathVariable("id") String id) {
-        imageService.delete(Long.parseLong(id));
-        return "redirect:/";
+    public ResponseEntity<Void> delete(@PathVariable long id) {
+        imageService.delete(id);
+        return ResponseEntity.noContent().build();
     }
 }

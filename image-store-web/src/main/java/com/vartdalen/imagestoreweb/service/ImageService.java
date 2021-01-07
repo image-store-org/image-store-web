@@ -13,12 +13,10 @@ import java.util.stream.Collectors;
 @Service
 public class ImageService {
 
-    @Value("http://${server.address}:${server.datasource.port}/images/") String BASE_URL;
-    private final RestTemplate restTemplate = new RestTemplate();
+    @Value("http://${server.address}:${server.datasource.port}/images/")
+    private String BASE_URL;
 
-    public String helloWorld() {
-        return "Hello, World! Regards image-store-web.";
-    }
+    private final RestTemplate restTemplate = new RestTemplate();
 
     public List<Image> get() {
         return Arrays
@@ -36,7 +34,7 @@ public class ImageService {
         return response.getBody();
     }
 
-    public void put(Image image) { restTemplate.put(BASE_URL+image.getId(), image); }
+    public void put(long id, Image image) { restTemplate.put(BASE_URL+id, image); }
 
     public void delete(long id) {
         restTemplate.delete(BASE_URL+id);
