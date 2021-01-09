@@ -32,7 +32,7 @@ jobs:
       - name: Maven package
         run: |
           cd $WEB_PATH
-          mvn -B package --file pom.xml
+          mvn -B package --file pom.xml -Dserver.ssl.key-store-password=${{ secrets.KEYSTORE_PASSWORD }}
       - name: DockerHub login
         uses: docker/login-action@v1
         with:
