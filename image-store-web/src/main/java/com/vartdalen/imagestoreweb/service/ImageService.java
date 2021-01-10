@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 @Service
 public class ImageService {
 
-    @Value("http://${server.address}:${server.datasource.port}/images/")
+    @Value("http://${server.datasource.address}:${server.datasource.port}/images/")
     private String BASE_URL;
 
     private final RestTemplate restTemplate = new RestTemplate();
