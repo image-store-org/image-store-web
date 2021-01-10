@@ -35,7 +35,7 @@ public class ImageController {
         return new ResponseEntity<>(imageService
                 .get()
                 .stream()
-                .min(Comparator.comparing(Image::getCreated))
+                .max(Comparator.comparing(Image::getCreated))
                 .get(),
                 HttpStatus.OK);
     }
