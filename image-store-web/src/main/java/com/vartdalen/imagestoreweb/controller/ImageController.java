@@ -5,6 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import com.vartdalen.imagestoreweb.service.ImageService;
 
+import javax.validation.ValidationException;
 import java.util.Comparator;
 import java.util.List;
 
@@ -48,7 +49,8 @@ public class ImageController {
 
     @ResponseBody
     @PutMapping("/{id}")
-    public ResponseEntity<Image> put(@PathVariable long id, @RequestBody Image image) {
+    public ResponseEntity<Void> put(@PathVariable long id, @RequestBody Image image) {
+        if (image.getId() > -1) { throw new ValidationException("Value of field 'id' is invalid. Expected: null"); }
         imageService.put(id, image);
         return new ResponseEntity<>(HttpStatus.OK);
     }
