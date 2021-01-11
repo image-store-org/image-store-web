@@ -13,8 +13,9 @@ The purpose of the **application** is to offer a web interface for storing and a
 
 | Description | Link |
 | ------:| -----------:|
-| SQL database web application: | https://github.com/vartdalen/image-store-sql
-| Dockerhub: | https://hub.docker.com/repository/docker/vartdalen/image-store-web
+| SQL database web application: | https://github.com/image-store-org/image-store-sql
+| DockerHub: | https://hub.docker.com/repository/docker/imagestoreorg/image-store-web
+
 
 ## Documentation
 
