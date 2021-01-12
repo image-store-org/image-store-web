@@ -23,17 +23,16 @@ The purpose of the **application** is to offer a web interface for storing and a
 
 #### Data
 ```
-"/actuator",                //  /health, /info
-"/api",                     //  /images
-"/v2",                      //  /api-docs
-"/swagger-ui",              //  /index.html
+"/actuator"	                //  /health, /info
+"/api"	                    //  /images
+"/v3"                      	//  /api-docs
+"/swagger-ui.html"
 ```
 
 #### Static
 ```
-"/swagger-resources",
-"/js",
-"/css",
-"/img",
+"/js"
+"/css"
+"/img"
 "/favicon.ico"
 ```
