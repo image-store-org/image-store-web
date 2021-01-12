@@ -16,11 +16,10 @@ public class VueRoutePathFilter implements WebFilter {
             //data
             "/actuator",                //  /health, /info
             "/api",                     //  /images
-            "/v2",                      //  /api-docs
-            "/swagger-ui",              //  /index.html
+            "/v3",                      //  /api-docs
+            "/swagger-ui.index",
 
             //static
-            "/swagger-resources",
             "/js",
             "/css",
             "/img",
