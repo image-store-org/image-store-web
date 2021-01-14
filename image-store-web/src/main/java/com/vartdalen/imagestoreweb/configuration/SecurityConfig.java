@@ -3,25 +3,26 @@ package com.vartdalen.imagestoreweb.configuration;
 import com.vartdalen.imagestoreweb.filter.ApiAuthorizationFilter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
-
-import javax.servlet.http.HttpServletResponse;
+import org.springframework.security.web.authentication.HttpStatusEntryPoint;
 
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Value("${server.api.authorization.header}")
-    private String authorizationHeader;
+    private String AUTHORIZATION_HEADER;
 
     @Value("${server.api.authorization.token}")
-    private String authorizationToken;
+    private String AUTHORIZATION_TOKEN;
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        ApiAuthorizationFilter filter = new ApiAuthorizationFilter(authorizationHeader, authorizationToken);
+
+        ApiAuthorizationFilter filter = new ApiAuthorizationFilter(AUTHORIZATION_HEADER, AUTHORIZATION_TOKEN);
 
         http
                 .requiresChannel()
@@ -39,12 +40,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .authenticated()
                 .and()
                 .exceptionHandling()
-                .authenticationEntryPoint((request, response, e) ->
-                {
-                    response.setContentType("application/json;charset=UTF-8");
-                    response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-                    response.getWriter().write("Invalid API authentication token");
-                });;
-
+                .authenticationEntryPoint(new HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED));
     }
 }
