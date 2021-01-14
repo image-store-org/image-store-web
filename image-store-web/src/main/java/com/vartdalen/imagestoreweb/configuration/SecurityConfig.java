@@ -2,34 +2,27 @@ package com.vartdalen.imagestoreweb.configuration;
 
 import com.vartdalen.imagestoreweb.filter.ApiAuthorizationFilter;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.web.authentication.HttpStatusEntryPoint;
 
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Value("${server.api.authorization.header}")
-    private String authorizationHeader;
+    private String AUTHORIZATION_HEADER;
 
     @Value("${server.api.authorization.token}")
-    private String authorizationToken;
+    private String AUTHORIZATION_TOKEN;
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
-        ApiAuthorizationFilter filter = new ApiAuthorizationFilter(authorizationHeader);
-        filter.setAuthenticationManager(authentication -> {
-            String principal = (String) authentication.getPrincipal();
-            if (!authorizationToken.equals(principal))
-            {
-                throw new BadCredentialsException("The API key was not found or not the expected value.");
-            }
-            authentication.setAuthenticated(true);
-            return authentication;
-        });
+        ApiAuthorizationFilter filter = new ApiAuthorizationFilter(AUTHORIZATION_HEADER, AUTHORIZATION_TOKEN);
 
         http
                 .requiresChannel()
@@ -38,12 +31,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .antMatcher("/api/**")
                 .csrf().disable()
-                .sessionManagement()
-                .sessionCreationPolicy(SessionCreationPolicy.STATELESS).
-                and()
+                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                .and()
                 .addFilter(filter)
                 .authorizeRequests()
+                .antMatchers(HttpMethod.GET).permitAll()
                 .anyRequest()
-                .authenticated();
+                .authenticated()
+                .and()
+                .exceptionHandling()
+                .authenticationEntryPoint(new HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED));
     }
 }
