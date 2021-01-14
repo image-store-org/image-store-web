@@ -15,9 +15,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Value("${server.api.authorization.header}")
     private String AUTHORIZATION_HEADER;
-
     @Value("${server.api.authorization.token}")
     private String AUTHORIZATION_TOKEN;
+
+    @Value("${server.port}")
+    int httpsPort;
+    @Value("${server.http.port}")
+    int httpPort;
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
