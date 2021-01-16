@@ -50,7 +50,11 @@ public class ImageController {
     @ResponseBody
     @PutMapping("/{id}")
     public ResponseEntity<Void> put(@PathVariable long id, @RequestBody Image image) {
-        if (image.getId() > -1) { throw new ValidationException("Value of field 'id' is invalid. Expected: null"); }
+        if (image.getId() > 0) { 
+            throw new ValidationException(
+                String.format("Value '%s' of field 'id' is invalid. Expected: null", image.getId())
+            );
+        }
         imageService.put(id, image);
         return new ResponseEntity<>(HttpStatus.OK);
     }
