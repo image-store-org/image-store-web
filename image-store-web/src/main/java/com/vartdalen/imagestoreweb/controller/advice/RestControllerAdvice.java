@@ -15,12 +15,12 @@ import java.net.ConnectException;
 public class RestControllerAdvice {
 
     @ExceptionHandler({ValidationException.class, MethodArgumentNotValidException.class, HttpMessageNotReadableException.class})
-    public ResponseEntity<Exception> handleBadRequestErrors(Exception ex) {
-        return new ResponseEntity<>(ex, HttpStatus.BAD_REQUEST);
+    public ResponseEntity<String> handleBadRequestErrors(Exception ex) {
+        return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(ConnectException.class)
-    public ResponseEntity<Exception> handleServiceUnavailableErrors(Exception ex) {
-        return new ResponseEntity<>(ex, HttpStatus.SERVICE_UNAVAILABLE);
+    public ResponseEntity<String> handleServiceUnavailableErrors(Exception ex) {
+        return new ResponseEntity<>(ex.getMessage(), HttpStatus.SERVICE_UNAVAILABLE);
     }
 }
