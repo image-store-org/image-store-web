@@ -21,12 +21,17 @@ The purpose of the **application** is to offer a web interface for storing and a
 
 ### Exposed paths
 
-#### Data
+#### API
 ```
 "/actuator"					//  /health, /info
 "/api"						//  /images
-"/v3"						//  /api-docs
-"/swagger-ui.html"
+```
+
+#### API-docs
+```
+"/v3",                      //  /api-docs
+"/swagger-ui.html",
+"/webjars",
 ```
 
 #### Static
