@@ -3,7 +3,7 @@
     "name": "vartdalen",
     "url": "https://github.com/vartdalen"
   },
-  "name": "frontend",
+  "name": "imagestore",
   "version": "1.0.0",
   "private": true,
   "scripts": {

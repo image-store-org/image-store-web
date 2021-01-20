@@ -1,4 +1,4 @@
-# frontend
+# image-store-web
 
 ## Project setup
 ```
