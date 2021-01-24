@@ -5,7 +5,7 @@
     </div>
 </template>
 
-<script lang="ts">
+<script type="application/javascript">
     import {defineComponent} from "vue";
     import Upload from "@/components/Upload.vue";
 

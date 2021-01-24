@@ -34,7 +34,7 @@
     </div>
 </template>
 
-<script lang="ts">
+<script type="application/javascript">
     import {defineComponent, ref} from "vue";
 
     export default defineComponent({
@@ -55,7 +55,7 @@
     });
 </script>
 
-<style scoped lang="scss">
+<style type="text/css" scoped>
     .about {
         font-family: 'Avenir', Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;

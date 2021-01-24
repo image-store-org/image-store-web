@@ -4,11 +4,11 @@
     </div>
 </template>
 
-<script lang="ts">
+<script type="application/javascript">
     import {defineComponent} from "vue";
     export default defineComponent({
 
     });
 </script>
 
-<style scoped lang="scss"></style>
+<style type="text/css" scoped></style>

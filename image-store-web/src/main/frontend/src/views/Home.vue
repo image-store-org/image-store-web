@@ -4,7 +4,7 @@
     </div>
 </template>
 
-<script lang="ts">
+<script type="application/javascript">
     import {defineComponent} from "vue";
     import About from "@/components/About.vue";
 

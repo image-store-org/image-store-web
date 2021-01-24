@@ -8,7 +8,7 @@
     </menubar>
 </template>
 
-<script lang="ts">
+<script type="application/javascript">
     import {defineComponent} from "vue";
     import Menubar from "primevue/menubar";
 
@@ -30,16 +30,6 @@
                                 label:'Browse',
                                 icon:'pi pi-fw pi-th-large',
                                 to: '/file/browse'
-                            }
-                        ]
-                    },
-                    {
-                        label:'Display',
-                        icon:'pi pi-fw pi-desktop',
-                        items:[
-                            {
-                                label:'Settings',
-                                icon:'pi pi-fw pi-cog',
                             }
                         ]
                     },
@@ -67,7 +57,7 @@
     });
 </script>
 
-<style lang="scss">
+<style type="text/css">
     .p-menubar {
         justify-content: space-between;
     }

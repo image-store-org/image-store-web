@@ -6,7 +6,7 @@
     </div>
 </template>
 
-<script>
+<script type="application/javascript">
     import {ref} from "vue";
     import Loader from "@/components/Loader";
     import Navbar from "@/components/Navbar";
@@ -27,4 +27,4 @@
     }
 </script>
 
-<style scoped lang="scss"></style>
+<style type="text/css" scoped ></style>
