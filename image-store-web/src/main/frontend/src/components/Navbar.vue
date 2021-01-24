@@ -34,6 +34,16 @@
                         ]
                     },
                     {
+                        label:'Display',
+                        icon:'pi pi-fw pi-desktop',
+                        items:[
+                            {
+                                label:'Settings',
+                                icon:'pi pi-fw pi-cog',
+                            }
+                        ]
+                    },
+                    {
                         label:'User',
                         icon:'pi pi-fw pi-user',
                         items:[
