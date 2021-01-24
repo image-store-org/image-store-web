@@ -25,7 +25,18 @@
                             },
                             {
                                 label:'Browse',
-                                icon:'pi pi-fw pi-search'
+                                icon:'pi pi-fw pi-th-large'
+                            }
+                        ]
+                    },
+                    {
+                        label:'Display',
+                        icon:'pi pi-fw pi-desktop',
+                        items:[
+                            {
+                                label:'Settings',
+                                icon:'pi pi-fw pi-cog',
+
                             }
                         ]
                     },
@@ -43,10 +54,10 @@
                             },
                             {
                                 label:'Logout',
-                                icon:'pi pi-fw pi-power-off'
+                                icon:'pi pi-fw pi-sign-out'
                             }
                         ]
-                    },
+                    }
                 ]
             }
         }
@@ -61,7 +72,7 @@
         right: 0;
         left: auto;
     }
-    .p-menubar .p-menubar-root-list .p-menuitem .p-submenu-list .p-menuitem-icon.pi-power-off {
+    .p-menubar .p-menubar-root-list .p-menuitem .p-submenu-list .p-menuitem-icon.pi-sign-out {
         color: red;
     }
 </style>
