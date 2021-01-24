@@ -24,7 +24,8 @@
       "es2015.symbol.wellknown",
       "es2015.generator",
       "es2018.promise"
-    ]
+    ],
+    "allowSyntheticDefaultImports": true
   },
   "include": [
     "src/**/*.ts",

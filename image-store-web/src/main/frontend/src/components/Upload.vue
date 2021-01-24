@@ -1,14 +1,16 @@
 <template>
-    <div class="home">
-        <about msg="This is a prop" />
+    <div class="upload">
+        Upload
     </div>
 </template>
 
 <script type="application/javascript">
     import {defineComponent} from "vue";
-    import About from "@/components/About.vue";
-
     export default defineComponent({
-        components: { About }
+
     });
 </script>
+
+<style type="text/css">
+
+</style>

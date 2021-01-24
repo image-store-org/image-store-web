@@ -15,7 +15,7 @@ The purpose of the **application** is to offer a web interface for storing and a
 | ------:| -----------:|
 | SQL database web application: | https://github.com/image-store-org/image-store-sql
 | DockerHub: | https://hub.docker.com/repository/docker/imagestoreorg/image-store-web
-
+| Example site: | https://imagestore.vartdalen.com
 
 ## Documentation
 
@@ -36,8 +36,8 @@ The purpose of the **application** is to offer a web interface for storing and a
 
 #### Static
 ```
-"/js"
-"/css"
-"/img"
-"/favicon.ico"
-```
+"/css",
+"/fonts",
+"/img",
+"/js",
+"/favicon.ico"        

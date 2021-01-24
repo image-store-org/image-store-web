@@ -1,14 +1,15 @@
 <template>
-    <div class="home">
-        <about msg="This is a prop" />
+    <div class="file">
+        File
+        <router-view></router-view>
     </div>
 </template>
 
 <script type="application/javascript">
     import {defineComponent} from "vue";
-    import About from "@/components/About.vue";
+    import Upload from "@/components/Upload.vue";
 
     export default defineComponent({
-        components: { About }
+        components: { Upload }
     });
 </script>
