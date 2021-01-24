@@ -1,13 +1,15 @@
 <template>
     <div class="loader">
-        <img svg-inline class="icon" src="./../assets/svg/loader.svg" alt="loader" />
+        <progress-spinner />
     </div>
 </template>
 
 <script lang="ts">
-import {defineComponent} from "vue";
+import { defineComponent } from "vue";
+import ProgressSpinner from 'primevue/progressspinner';
 
 export default defineComponent({
+    components: { ProgressSpinner }
 });
 
 </script>
