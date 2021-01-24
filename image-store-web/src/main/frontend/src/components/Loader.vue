@@ -1,5 +1,5 @@
 <template>
-    <div class="loader">
+    <div class="loader pre-loader">
         <progress-spinner />
     </div>
 </template>
@@ -14,4 +14,14 @@ export default defineComponent({
 
 </script>
 
-<style scoped></style>
+<style scoped>
+.loader.pre-loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+</style>

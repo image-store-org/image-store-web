@@ -1,8 +1,6 @@
 <template>
     <div id="app">
-        <loader class="loader pre-loader"
-                v-if="isLoading"
-        />
+        <loader v-if="isLoading" />
         <div v-else
              id="nav">
             <navbar />
@@ -38,14 +36,4 @@
     }
 </script>
 
-<style scoped lang="scss">
-    .loader.pre-loader{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-</style>
+<style scoped lang="scss"></style>
