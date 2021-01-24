@@ -1,5 +1,6 @@
 <template>
-    <div class="hello">
+    <div class="about">
+        <img alt="Vue logo" src="../assets/logo.png">
         <h2>This is a Vue 3 component!</h2>
         <h1>{{ msg }}</h1>
         <p>
@@ -29,31 +30,43 @@
             <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
             <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
         </ul>
+        <button @click="increase">Clicked {{ count }} times.</button>
     </div>
 </template>
 
 <script lang="ts">
-    import {defineComponent} from "vue";
+    import {defineComponent, ref} from "vue";
+
     export default defineComponent({
         props: {
             msg: String
+        },
+        setup() {
+            const count = ref(0);
+            const increase = () => {
+                count.value++
+            }
+
+            return {
+                count,
+                increase,
+            }
         }
     });
 </script>
 
 <style scoped lang="scss">
-    h3 {
-        margin: 40px 0 0;
+    .about {
+        font-family: 'Avenir', Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: #2c3e50;
     }
-    ul {
-        list-style-type: none;
+    .about ul {
         padding: 0;
     }
-    li {
-        display: inline-block;
-        margin: 0 10px;
-    }
-    a {
-        color: #42b983;
+    .about ul li {
+        list-style: none;
     }
 </style>

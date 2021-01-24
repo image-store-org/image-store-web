@@ -1,23 +1,14 @@
 <template>
     <div id="app">
         <loader v-if="isLoading" />
-        <div v-else
-             id="nav">
-            <navbar />
-            <router-link to="/">
-                Home
-            </router-link> |
-            <router-link to="/about">
-                About
-            </router-link>
-        </div>
+        <navbar v-if="!isLoading" />
         <router-view v-if="!isLoading" />
     </div>
 </template>
 
 <script>
-    import Loader from "@/components/Loader";
     import {ref} from "vue";
+    import Loader from "@/components/Loader";
     import Navbar from "@/components/Navbar";
 
     export default {

@@ -1,7 +1,9 @@
 <template>
     <menubar :model="items">
         <template #start>
-            <img alt="logo" src="../assets/logo.png" height="40" class="p-mr-2">
+            <router-link to="/">
+                <img alt="logo" src="../assets/logo.png" height="40" class="p-mr-2">
+            </router-link>
         </template>
     </menubar>
 </template>
@@ -21,11 +23,13 @@
                         items: [
                             {
                                 label:'Upload',
-                                icon:'pi pi-fw pi-plus'
+                                icon:'pi pi-fw pi-plus',
+                                to: '/file/upload'
                             },
                             {
                                 label:'Browse',
-                                icon:'pi pi-fw pi-th-large'
+                                icon:'pi pi-fw pi-th-large',
+                                to: '/file/browse'
                             }
                         ]
                     },
@@ -36,7 +40,6 @@
                             {
                                 label:'Settings',
                                 icon:'pi pi-fw pi-cog',
-
                             }
                         ]
                     },
