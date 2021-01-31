@@ -29,7 +29,7 @@ The purpose of the **application** is to offer a web interface for storing and a
 
 #### API-docs
 ```
-"/v3",                      //  /api-docs
+"/v3",						//  /api-docs
 "/swagger-ui.html",
 "/webjars",
 ```
@@ -40,4 +40,4 @@ The purpose of the **application** is to offer a web interface for storing and a
 "/fonts",
 "/img",
 "/js",
-"/favicon.ico"        
+"/favicon.ico"      

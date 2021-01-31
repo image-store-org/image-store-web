@@ -4,29 +4,21 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="icon" href="favicon.ico">
+        <link rel="icon" href="/favicon.ico">
         <title>imagestore</title>
     </head>
-    <style type="text/css">
-        html, body, #index {
-            height: 100%;
-            width: 100%;
-            margin: 0;
-        }
-    </style>
-<body>
-    <!--Polyfill-->
-    <script type="application/javascript">
-        if(!(window.fetch&&window.Promise&&[].includes&&Object.assign&&window.Map)){
-            document.write('<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=default,fetch"></scr'+'ipt>')
-            document.write('<h1 style="text-align: center">DO NOT USE INTERNET EXPLORER</h1>');
-        }
-    </script>
-    <!-- /Polyfill -->
-    <noscript>
-        <strong>Please enable JavaScript to continue.</strong>
-    </noscript>
-    <div id="index"></div>
-    <!-- built files will be auto injected -->
-</body>
+    <body>
+        <!--Polyfill-->
+        <script>
+            if(!(window.fetch&&window.Promise&&[].includes&&Object.assign&&window.Map)){
+                document.write('<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=default,fetch"></scr'+'ipt>')
+                document.write('<samp>DO NOT USE INTERNET EXPLORER</samp>');
+            }
+        </script>
+        <!-- /Polyfill -->
+        <noscript>
+            <samp>Please enable JavaScript to view this website</samp>
+        </noscript>
+        <div id="index"></div>
+    </body>
 </html>

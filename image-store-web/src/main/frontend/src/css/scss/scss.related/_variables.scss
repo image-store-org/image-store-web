@@ -1,0 +1,28 @@
+//breakpoints
+$breakpoint-mobile:               480px;
+$breakpoint-desktop:              960px;
+
+//font sizes
+$font-size-xlg:                   28px;
+$font-size-lg:                    22px;
+$font-size-md:                    20px;
+$font-size-sm:                    18px;
+$font-size-xsm:                   16px;
+$font-size-xxsm:                  14px;
+$font-size-xxxsm:                 12px;
+
+//colors
+$color-columbia-blue:             #c8dadf;
+$color-indigo-white:              #ecf2f2;
+$color-metallic-blue:             #32527b;
+$color-still-water:               #92b0b3;
+$color-winter-teal:               #c8dadf;
+
+//z-index
+$z-index__positive-high:          3;
+$z-index__positive-medium:        2;
+$z-index__positive-low:           1;
+$z-index__neutral:                0;
+$z-index__negative-low:           -1;
+$z-index__negative-medium:        -2;
+$z-index__negative-high:          -3;
