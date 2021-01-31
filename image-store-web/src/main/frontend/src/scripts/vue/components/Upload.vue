@@ -149,12 +149,12 @@
                 }
             },
             _successAddFiles(fileNames: string[]): void {
-                let summarySubString: string = fileNames.length > 1 ? "Files" : "File";
                 let detail: string = fileNames.toString().replace(new RegExp(",", "g"), ", ");
+                let detailTrail: string = ` ${fileNames.length > 1 ? "were" : "was"} added successfully`;
                 this.toast.add({
                     severity: "success",
-                    summary: `${summarySubString} added successfully`,
-                    detail: detail,
+                    summary: "Success!",
+                    detail: detail + detailTrail,
                     life: 10000
                 });
             },
