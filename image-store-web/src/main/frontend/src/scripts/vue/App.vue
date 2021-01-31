@@ -32,17 +32,5 @@
 
 <style lang="scss">
     @import "src/css/scss/base/html";
-
-    .p-toast.p-toast-bottom-left {
-        @include respond(mobile) {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            left: 0;
-            margin-left: 0;
-        }
-    }
-    .p-toast.p-toast-bottom-left:first-child {
-        width: 85%;
-    }
+    @import "src/css/scss/overrides/toast";
 </style>
