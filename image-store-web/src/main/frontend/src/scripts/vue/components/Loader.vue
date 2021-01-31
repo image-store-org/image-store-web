@@ -4,7 +4,7 @@
     </div>
 </template>
 
-<script type="application/javascript">
+<script>
 import { defineComponent } from "vue";
 import ProgressSpinner from 'primevue/progressspinner';
 
@@ -14,7 +14,7 @@ export default defineComponent({
 
 </script>
 
-<style type="text/css" scoped>
+<style scoped>
 .loader.pre-loader {
     position: absolute;
     width: 100%;

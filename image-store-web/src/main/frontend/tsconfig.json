@@ -28,8 +28,8 @@
     "allowSyntheticDefaultImports": true
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.vue"
+    "src/scripts/ts/**/*.ts",
+    "src/scripts/vue/**/*.vue"
   ],
   "exclude": [
     "node_modules"

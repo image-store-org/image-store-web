@@ -1,6 +1,6 @@
 <template>
     <div class="about">
-        <img alt="Vue logo" src="../assets/logo.png">
+        <img alt="Vue logo" src="../../../assets/logo.png">
         <h2>This is a Vue 3 component!</h2>
         <h1>{{ msg }}</h1>
         <p>
@@ -8,12 +8,6 @@
             check out the
             <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
         </p>
-        <h3>Installed CLI Plugins</h3>
-        <ul>
-            <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-            <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-typescript" target="_blank" rel="noopener">typescript</a></li>
-            <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-        </ul>
         <h3>Essential Links</h3>
         <ul>
             <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
@@ -34,7 +28,7 @@
     </div>
 </template>
 
-<script type="application/javascript">
+<script>
     import {defineComponent, ref} from "vue";
 
     export default defineComponent({
@@ -55,18 +49,12 @@
     });
 </script>
 
-<style type="text/css" scoped>
+<style lang="scss">
     .about {
         font-family: 'Avenir', Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
         color: #2c3e50;
-    }
-    .about ul {
-        padding: 0;
-    }
-    .about ul li {
-        list-style: none;
     }
 </style>

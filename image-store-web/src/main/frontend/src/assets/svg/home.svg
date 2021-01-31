@@ -1,0 +1,311 @@
+<svg viewBox="0 0 2184.857 1664.516">
+    <defs>
+        <clipPath id="clip-path">
+            <rect width="24" height="20" fill="none" data-darkreader-inline-fill="" style="--darkreader-inline-fill:none;"></rect>
+        </clipPath>
+    </defs>
+    <g id="illus" transform="translate(227.429 219.193)">
+        <g class="whole-card" data-svg-origin="1139.2559814453125 314.6130065917969" style="transform-origin: 0px 0px;">
+            <rect id="Rectangle_1139" class="card-bg" data-name="Rectangle 1139" width="366" height="444" rx="5" transform="matrix(0.86603,0.5,-0.5,0.86603,1279.114990234375,314.6130065917969)" fill="#525252" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#3e4345; transform-origin: 0px 0px; opacity: 1;" data-svg-origin="183 222"></rect>
+            <path id="Path_40" class="card-top" data-name="Path 40" d="M5,0H361a5,5,0,0,1,5,5V187H0V5A5,5,0,0,1,5,0Z" transform="matrix(0.86603,0.5,-0.5,0.86603,1279.114990234375,314.6130065917969)" fill="#6c6c6c" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#51585b; transform-origin: 0px 0px; opacity: 1;" data-svg-origin="183 0"></path>
+            <rect class="blip1" id="Rectangle_1141" data-name="Rectangle 1141" width="97" height="21" rx="10.5" transform="matrix(0.86603,0.5,-0.5,0.86603,1193.2559814453125,543.3250122070312)" fill="#04a2e4" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#0382b6; transform-origin: 0px 0px; opacity: 1;" data-svg-origin="0 0"></rect>
+            <rect class="blip2" id="Rectangle_1142" data-name="Rectangle 1142" width="234" height="21" rx="10.5" transform="matrix(0.86603,0.5,-0.5,0.86603,1167.2559814453125,588.3579711914062)" fill="#7b7b7b" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#5d6468; transform-origin: 0px 0px; opacity: 1;" data-svg-origin="0 0"></rect>
+            <rect class="blip3" id="Rectangle_1145" data-name="Rectangle 1145" width="158" height="21" rx="10.5" transform="matrix(0.86603,0.5,-0.5,0.86603,1149.7559814453125,618.6690063476562)" fill="#7b7b7b" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#5d6468; transform-origin: 0px 0px; opacity: 1;" data-svg-origin="0 0"></rect>
+            <rect class="blip4" id="Rectangle_1143" data-name="Rectangle 1143" width="53" height="21" rx="10.5" transform="matrix(0.86603,0.5,-0.5,0.86603,1263.0169677734375,754.4970092773438)" fill="#7b7b7b" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#9a9284; transform-origin: 0px 0px; opacity: 1;" data-svg-origin="0 0"></rect>
+            <rect class="blip5" id="Rectangle_1144" data-name="Rectangle 1144" width="53" height="21" rx="10.5" transform="matrix(0.86603,0.5,-0.5,0.86603,1324.5040283203125,789.9970092773438)" fill="#fff" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#e8e6e3; transform-origin: 0px 0px; opacity: 1;" data-svg-origin="0 0"></rect>
+            <g class="icon" id="iconfinder_picture_1814111_1_" data-name="iconfinder_picture_1814111 (1)" transform="matrix(0.86603,0.5,-0.5,0.86603,1378.33297,442.56393)" data-svg-origin="32.04998779296875 32.099998474121094" style="transform-origin: 0px 0px; opacity: 1;">
+                <g id="Icon-Image" transform="translate(278 232)">
+                    <path id="Fill-12" d="M-226.2-181.6h-39.5a4.225,4.225,0,0,1-4.2-4.2V-214a4.225,4.225,0,0,1,4.2-4.2h39.5A4.225,4.225,0,0,1-222-214v28.2a4.225,4.225,0,0,1-4.2,4.2Zm-39.6-33.9a1.367,1.367,0,0,0-1.4,1.4v28.2a1.367,1.367,0,0,0,1.4,1.4h39.5a1.367,1.367,0,0,0,1.4-1.4v-28.2a1.367,1.367,0,0,0-1.4-1.4Z" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#43494b;"></path>
+                    <path id="Fill-13" d="M-238.9-201.5a5.484,5.484,0,0,1-5.5-5.5,5.549,5.549,0,0,1,5.5-5.5,5.549,5.549,0,0,1,5.5,5.5,5.549,5.549,0,0,1-5.5,5.5Zm0-8.5a2.9,2.9,0,0,0-2.9,2.9,2.9,2.9,0,0,0,2.9,2.9,2.9,2.9,0,0,0,2.9-2.9,2.9,2.9,0,0,0-2.9-2.9Z" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-14" d="M-231.4-182.1l-23.1-21.7-13.2,12.2-1.8-1.9,15-13.9,24.9,23.4-1.8,1.9" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#43494b;"></path>
+                    <path id="Fill-15" d="M-224.2-189.3l-7.7-6.2-6.4,5.3-1.7-2.1,8.1-6.6,9.3,7.6-1.6,2" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                </g>
+            </g>
+        </g>
+        <g id="Group_59" data-name="Group 59" transform="translate(625.109 -1030.616) rotate(30)" opacity="0.36">
+            <g id="Rectangle_1146" data-name="Rectangle 1146" transform="translate(1632 796)" fill="none" stroke="#474747" stroke-width="5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#bbb5ac;">
+                <rect width="366" height="444" rx="5" stroke="none" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke:none;"></rect>
+                <rect x="2.5" y="2.5" width="361" height="439" rx="2.5" fill="none" data-darkreader-inline-fill="" style="--darkreader-inline-fill:none;"></rect>
+            </g>
+            <g id="Rectangle_1151" data-name="Rectangle 1151" transform="translate(1665 1073)" fill="none" stroke="#474747" stroke-width="5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#bbb5ac;">
+                <rect width="109" height="138" rx="5" stroke="none" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke:none;"></rect>
+                <rect x="2.5" y="2.5" width="104" height="133" rx="2.5" fill="none" data-darkreader-inline-fill="" style="--darkreader-inline-fill:none;"></rect>
+            </g>
+            <path id="Rectangle_1149" data-name="Rectangle 1149" d="M5,0H361a5,5,0,0,1,5,5V57a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V5A5,5,0,0,1,5,0Z" transform="translate(1632 796)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></path>
+            <rect id="Rectangle_1150" data-name="Rectangle 1150" width="151" height="21" rx="10.5" transform="translate(1652 814)" fill="#343434" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#272a2c;"></rect>
+            <rect id="Rectangle_1148" data-name="Rectangle 1148" width="166" height="21" rx="10.5" transform="translate(1663 896)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1148-2" data-name="Rectangle 1148" width="299" height="21" rx="10.5" transform="translate(1663 935)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1148-3" data-name="Rectangle 1148" width="299" height="21" rx="10.5" transform="translate(1663 974)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1148-4" data-name="Rectangle 1148" width="221" height="21" rx="10.5" transform="translate(1663 1013)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1148-5" data-name="Rectangle 1148" width="159" height="21" rx="10.5" transform="translate(1803 1073)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1148-6" data-name="Rectangle 1148" width="104" height="21" rx="10.5" transform="translate(1803 1112)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1148-7" data-name="Rectangle 1148" width="56" height="21" rx="10.5" transform="translate(1803 1190)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1152" data-name="Rectangle 1152" width="56" height="21" rx="10.5" transform="translate(1906 1190)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <g id="iconfinder_picture_1814111_1_2" data-name="iconfinder_picture_1814111 (1)" transform="translate(1699.156 1117.8)">
+                <g id="Icon-Image-2" data-name="Icon-Image" transform="translate(8.1 13.8)">
+                    <path id="Fill-12-2" data-name="Fill-12" d="M-246.737-198.8h-20.937a2.24,2.24,0,0,1-2.226-2.226v-14.947a2.24,2.24,0,0,1,2.226-2.226h20.937a2.24,2.24,0,0,1,2.226,2.226v14.947a2.24,2.24,0,0,1-2.226,2.226Zm-20.99-17.969a.725.725,0,0,0-.742.742v14.947a.725.725,0,0,0,.742.742h20.937a.725.725,0,0,0,.742-.742v-14.947a.725.725,0,0,0-.742-.742Z" transform="translate(269.9 218.2)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-13-2" data-name="Fill-13" d="M-241.485-206.67a2.907,2.907,0,0,1-2.915-2.915,2.941,2.941,0,0,1,2.915-2.915,2.941,2.941,0,0,1,2.915,2.915,2.941,2.941,0,0,1-2.915,2.915Zm0-4.505a1.538,1.538,0,0,0-1.537,1.537,1.538,1.538,0,0,0,1.537,1.537,1.538,1.538,0,0,0,1.537-1.537,1.538,1.538,0,0,0-1.537-1.537Z" transform="translate(257.916 215.521)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-14-2" data-name="Fill-14" d="M-249.305-193.99l-12.244-11.5-7,6.467-.954-1.007,7.951-7.368,13.2,12.4-.954,1.007" transform="translate(269.712 213.124)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-15-2" data-name="Fill-15" d="M-231.625-193.812l-4.081-3.286-3.392,2.809-.9-1.113,4.293-3.5,4.929,4.028-.848,1.06" transform="translate(255.848 209.13)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                </g>
+            </g>
+        </g>
+        <g id="Group_62" data-name="Group 62" transform="translate(-625.434 -1222.61) rotate(30)" opacity="0.36">
+            <g id="Rectangle_1146-2" data-name="Rectangle 1146" transform="translate(1632 796)" fill="none" stroke="#474747" stroke-width="5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#bbb5ac;">
+                <rect width="366" height="444" rx="5" stroke="none" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke:none;"></rect>
+                <rect x="2.5" y="2.5" width="361" height="439" rx="2.5" fill="none" data-darkreader-inline-fill="" style="--darkreader-inline-fill:none;"></rect>
+            </g>
+            <g id="Rectangle_1151-2" data-name="Rectangle 1151" transform="translate(1665 1073)" fill="none" stroke="#474747" stroke-width="5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#bbb5ac;">
+                <rect width="109" height="138" rx="5" stroke="none" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke:none;"></rect>
+                <rect x="2.5" y="2.5" width="104" height="133" rx="2.5" fill="none" data-darkreader-inline-fill="" style="--darkreader-inline-fill:none;"></rect>
+            </g>
+            <path id="Rectangle_1149-2" data-name="Rectangle 1149" d="M5,0H361a5,5,0,0,1,5,5V57a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V5A5,5,0,0,1,5,0Z" transform="translate(1632 796)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></path>
+            <rect id="Rectangle_1150-2" data-name="Rectangle 1150" width="151" height="21" rx="10.5" transform="translate(1652 814)" fill="#343434" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#272a2c;"></rect>
+            <rect id="Rectangle_1148-8" data-name="Rectangle 1148" width="166" height="21" rx="10.5" transform="translate(1663 896)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1148-9" data-name="Rectangle 1148" width="299" height="21" rx="10.5" transform="translate(1663 935)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1148-10" data-name="Rectangle 1148" width="299" height="21" rx="10.5" transform="translate(1663 974)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1148-11" data-name="Rectangle 1148" width="221" height="21" rx="10.5" transform="translate(1663 1013)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1148-12" data-name="Rectangle 1148" width="159" height="21" rx="10.5" transform="translate(1803 1073)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1148-13" data-name="Rectangle 1148" width="104" height="21" rx="10.5" transform="translate(1803 1112)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1148-14" data-name="Rectangle 1148" width="56" height="21" rx="10.5" transform="translate(1803 1190)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1152-2" data-name="Rectangle 1152" width="56" height="21" rx="10.5" transform="translate(1906 1190)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <g id="iconfinder_picture_1814111_1_3" data-name="iconfinder_picture_1814111 (1)" transform="translate(1699.156 1117.8)">
+                <g id="Icon-Image-3" data-name="Icon-Image" transform="translate(8.1 13.8)">
+                    <path id="Fill-12-3" data-name="Fill-12" d="M-246.737-198.8h-20.937a2.24,2.24,0,0,1-2.226-2.226v-14.947a2.24,2.24,0,0,1,2.226-2.226h20.937a2.24,2.24,0,0,1,2.226,2.226v14.947a2.24,2.24,0,0,1-2.226,2.226Zm-20.99-17.969a.725.725,0,0,0-.742.742v14.947a.725.725,0,0,0,.742.742h20.937a.725.725,0,0,0,.742-.742v-14.947a.725.725,0,0,0-.742-.742Z" transform="translate(269.9 218.2)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-13-3" data-name="Fill-13" d="M-241.485-206.67a2.907,2.907,0,0,1-2.915-2.915,2.941,2.941,0,0,1,2.915-2.915,2.941,2.941,0,0,1,2.915,2.915,2.941,2.941,0,0,1-2.915,2.915Zm0-4.505a1.538,1.538,0,0,0-1.537,1.537,1.538,1.538,0,0,0,1.537,1.537,1.538,1.538,0,0,0,1.537-1.537,1.538,1.538,0,0,0-1.537-1.537Z" transform="translate(257.916 215.521)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-14-3" data-name="Fill-14" d="M-249.305-193.99l-12.244-11.5-7,6.467-.954-1.007,7.951-7.368,13.2,12.4-.954,1.007" transform="translate(269.712 213.124)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-15-3" data-name="Fill-15" d="M-231.625-193.812l-4.081-3.286-3.392,2.809-.9-1.113,4.293-3.5,4.929,4.028-.848,1.06" transform="translate(255.848 209.13)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                </g>
+            </g>
+        </g>
+        <g id="Group_66" data-name="Group 66" transform="translate(496.262 -1593.445) rotate(30)" opacity="0.36">
+            <g id="Rectangle_1146-3" data-name="Rectangle 1146" transform="translate(1632 796)" fill="none" stroke="#474747" stroke-width="5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#bbb5ac;">
+                <rect width="366" height="444" rx="5" stroke="none" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke:none;"></rect>
+                <rect x="2.5" y="2.5" width="361" height="439" rx="2.5" fill="none" data-darkreader-inline-fill="" style="--darkreader-inline-fill:none;"></rect>
+            </g>
+            <g id="Rectangle_1151-3" data-name="Rectangle 1151" transform="translate(1665 1073)" fill="none" stroke="#474747" stroke-width="5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#bbb5ac;">
+                <rect width="109" height="138" rx="5" stroke="none" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke:none;"></rect>
+                <rect x="2.5" y="2.5" width="104" height="133" rx="2.5" fill="none" data-darkreader-inline-fill="" style="--darkreader-inline-fill:none;"></rect>
+            </g>
+            <path id="Rectangle_1149-3" data-name="Rectangle 1149" d="M5,0H361a5,5,0,0,1,5,5V57a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V5A5,5,0,0,1,5,0Z" transform="translate(1632 796)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></path>
+            <rect id="Rectangle_1150-3" data-name="Rectangle 1150" width="151" height="21" rx="10.5" transform="translate(1652 814)" fill="#343434" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#272a2c;"></rect>
+            <rect id="Rectangle_1148-15" data-name="Rectangle 1148" width="166" height="21" rx="10.5" transform="translate(1663 896)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1148-16" data-name="Rectangle 1148" width="299" height="21" rx="10.5" transform="translate(1663 935)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1148-17" data-name="Rectangle 1148" width="299" height="21" rx="10.5" transform="translate(1663 974)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1148-18" data-name="Rectangle 1148" width="221" height="21" rx="10.5" transform="translate(1663 1013)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1148-19" data-name="Rectangle 1148" width="159" height="21" rx="10.5" transform="translate(1803 1073)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1148-20" data-name="Rectangle 1148" width="104" height="21" rx="10.5" transform="translate(1803 1112)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1148-21" data-name="Rectangle 1148" width="56" height="21" rx="10.5" transform="translate(1803 1190)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1152-3" data-name="Rectangle 1152" width="56" height="21" rx="10.5" transform="translate(1906 1190)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <g id="iconfinder_picture_1814111_1_4" data-name="iconfinder_picture_1814111 (1)" transform="translate(1699.156 1117.8)">
+                <g id="Icon-Image-4" data-name="Icon-Image" transform="translate(8.1 13.8)">
+                    <path id="Fill-12-4" data-name="Fill-12" d="M-246.737-198.8h-20.937a2.24,2.24,0,0,1-2.226-2.226v-14.947a2.24,2.24,0,0,1,2.226-2.226h20.937a2.24,2.24,0,0,1,2.226,2.226v14.947a2.24,2.24,0,0,1-2.226,2.226Zm-20.99-17.969a.725.725,0,0,0-.742.742v14.947a.725.725,0,0,0,.742.742h20.937a.725.725,0,0,0,.742-.742v-14.947a.725.725,0,0,0-.742-.742Z" transform="translate(269.9 218.2)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-13-4" data-name="Fill-13" d="M-241.485-206.67a2.907,2.907,0,0,1-2.915-2.915,2.941,2.941,0,0,1,2.915-2.915,2.941,2.941,0,0,1,2.915,2.915,2.941,2.941,0,0,1-2.915,2.915Zm0-4.505a1.538,1.538,0,0,0-1.537,1.537,1.538,1.538,0,0,0,1.537,1.537,1.538,1.538,0,0,0,1.537-1.537,1.538,1.538,0,0,0-1.537-1.537Z" transform="translate(257.916 215.521)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-14-4" data-name="Fill-14" d="M-249.305-193.99l-12.244-11.5-7,6.467-.954-1.007,7.951-7.368,13.2,12.4-.954,1.007" transform="translate(269.712 213.124)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-15-4" data-name="Fill-15" d="M-231.625-193.812l-4.081-3.286-3.392,2.809-.9-1.113,4.293-3.5,4.929,4.028-.848,1.06" transform="translate(255.848 209.13)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                </g>
+            </g>
+        </g>
+        <g id="Group_56" data-name="Group 56" transform="translate(573.109 -940.549) rotate(30)" opacity="0.36">
+            <g id="Rectangle_1172" data-name="Rectangle 1172" transform="translate(64 796)" fill="none" stroke="#474747" stroke-width="5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#bbb5ac;">
+                <rect width="366" height="444" rx="5" stroke="none" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke:none;"></rect>
+                <rect x="2.5" y="2.5" width="361" height="439" rx="2.5" fill="none" data-darkreader-inline-fill="" style="--darkreader-inline-fill:none;"></rect>
+            </g>
+            <rect id="Rectangle_1174" data-name="Rectangle 1174" width="366" height="98" rx="5" transform="translate(64 1142)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1175" data-name="Rectangle 1175" width="166" height="21" rx="10.5" transform="translate(106 913)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <g id="Repeat_Grid_2" data-name="Repeat Grid 2" transform="translate(357 848)" clip-path="url(#clip-path)">
+                <g transform="translate(-366 -853)">
+                    <rect id="Rectangle_1184" data-name="Rectangle 1184" width="24" height="4" rx="2" transform="translate(366 853)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#bbb5ac;"></rect>
+                </g>
+                <g transform="translate(-366 -846)">
+                    <rect id="Rectangle_1184-2" data-name="Rectangle 1184" width="24" height="4" rx="2" transform="translate(366 853)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#bbb5ac;"></rect>
+                </g>
+                <g transform="translate(-366 -839)">
+                    <rect id="Rectangle_1184-3" data-name="Rectangle 1184" width="24" height="4" rx="2" transform="translate(366 853)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#bbb5ac;"></rect>
+                </g>
+            </g>
+            <rect id="Rectangle_1176" data-name="Rectangle 1176" width="243" height="21" rx="10.5" transform="translate(106 952)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1177" data-name="Rectangle 1177" width="275" height="21" rx="10.5" transform="translate(106 991)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1178" data-name="Rectangle 1178" width="275" height="21" rx="10.5" transform="translate(106 1052)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1183" data-name="Rectangle 1183" width="186" height="21" rx="10.5" transform="translate(106 1089)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <g id="iconfinder_picture_1814111_1_5" data-name="iconfinder_picture_1814111 (1)" transform="translate(98.156 833.8)">
+                <g id="Icon-Image-5" data-name="Icon-Image" transform="translate(8.1 13.8)">
+                    <path id="Fill-12-5" data-name="Fill-12" d="M-246.737-198.8h-20.937a2.24,2.24,0,0,1-2.226-2.226v-14.947a2.24,2.24,0,0,1,2.226-2.226h20.937a2.24,2.24,0,0,1,2.226,2.226v14.947a2.24,2.24,0,0,1-2.226,2.226Zm-20.99-17.969a.725.725,0,0,0-.742.742v14.947a.725.725,0,0,0,.742.742h20.937a.725.725,0,0,0,.742-.742v-14.947a.725.725,0,0,0-.742-.742Z" transform="translate(269.9 218.2)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-13-5" data-name="Fill-13" d="M-241.485-206.67a2.907,2.907,0,0,1-2.915-2.915,2.941,2.941,0,0,1,2.915-2.915,2.941,2.941,0,0,1,2.915,2.915,2.941,2.941,0,0,1-2.915,2.915Zm0-4.505a1.538,1.538,0,0,0-1.537,1.537,1.538,1.538,0,0,0,1.537,1.537,1.538,1.538,0,0,0,1.537-1.537,1.538,1.538,0,0,0-1.537-1.537Z" transform="translate(257.916 215.521)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-14-5" data-name="Fill-14" d="M-249.305-193.99l-12.244-11.5-7,6.467-.954-1.007,7.951-7.368,13.2,12.4-.954,1.007" transform="translate(269.712 213.124)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-15-5" data-name="Fill-15" d="M-231.625-193.812l-4.081-3.286-3.392,2.809-.9-1.113,4.293-3.5,4.929,4.028-.848,1.06" transform="translate(255.848 209.13)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                </g>
+            </g>
+        </g>
+        <g id="Group_63" data-name="Group 63" transform="translate(1028.708 -163.668) rotate(30)" opacity="0.36">
+            <g id="Rectangle_1172-2" data-name="Rectangle 1172" transform="translate(64 796)" fill="none" stroke="#474747" stroke-width="5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#bbb5ac;">
+                <rect width="366" height="444" rx="5" stroke="none" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke:none;"></rect>
+                <rect x="2.5" y="2.5" width="361" height="439" rx="2.5" fill="none" data-darkreader-inline-fill="" style="--darkreader-inline-fill:none;"></rect>
+            </g>
+            <rect id="Rectangle_1174-2" data-name="Rectangle 1174" width="366" height="98" rx="5" transform="translate(64 1142)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1175-2" data-name="Rectangle 1175" width="166" height="21" rx="10.5" transform="translate(106 913)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <g id="Repeat_Grid_2-2" data-name="Repeat Grid 2" transform="translate(357 848)" clip-path="url(#clip-path)">
+                <g transform="translate(-366 -853)">
+                    <rect id="Rectangle_1184-4" data-name="Rectangle 1184" width="24" height="4" rx="2" transform="translate(366 853)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#bbb5ac;"></rect>
+                </g>
+                <g transform="translate(-366 -846)">
+                    <rect id="Rectangle_1184-5" data-name="Rectangle 1184" width="24" height="4" rx="2" transform="translate(366 853)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#bbb5ac;"></rect>
+                </g>
+                <g transform="translate(-366 -839)">
+                    <rect id="Rectangle_1184-6" data-name="Rectangle 1184" width="24" height="4" rx="2" transform="translate(366 853)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#bbb5ac;"></rect>
+                </g>
+            </g>
+            <rect id="Rectangle_1176-2" data-name="Rectangle 1176" width="243" height="21" rx="10.5" transform="translate(106 952)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1177-2" data-name="Rectangle 1177" width="275" height="21" rx="10.5" transform="translate(106 991)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1178-2" data-name="Rectangle 1178" width="275" height="21" rx="10.5" transform="translate(106 1052)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1183-2" data-name="Rectangle 1183" width="186" height="21" rx="10.5" transform="translate(106 1089)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <g id="iconfinder_picture_1814111_1_6" data-name="iconfinder_picture_1814111 (1)" transform="translate(98.156 833.8)">
+                <g id="Icon-Image-6" data-name="Icon-Image" transform="translate(8.1 13.8)">
+                    <path id="Fill-12-6" data-name="Fill-12" d="M-246.737-198.8h-20.937a2.24,2.24,0,0,1-2.226-2.226v-14.947a2.24,2.24,0,0,1,2.226-2.226h20.937a2.24,2.24,0,0,1,2.226,2.226v14.947a2.24,2.24,0,0,1-2.226,2.226Zm-20.99-17.969a.725.725,0,0,0-.742.742v14.947a.725.725,0,0,0,.742.742h20.937a.725.725,0,0,0,.742-.742v-14.947a.725.725,0,0,0-.742-.742Z" transform="translate(269.9 218.2)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-13-6" data-name="Fill-13" d="M-241.485-206.67a2.907,2.907,0,0,1-2.915-2.915,2.941,2.941,0,0,1,2.915-2.915,2.941,2.941,0,0,1,2.915,2.915,2.941,2.941,0,0,1-2.915,2.915Zm0-4.505a1.538,1.538,0,0,0-1.537,1.537,1.538,1.538,0,0,0,1.537,1.537,1.538,1.538,0,0,0,1.537-1.537,1.538,1.538,0,0,0-1.537-1.537Z" transform="translate(257.916 215.521)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-14-6" data-name="Fill-14" d="M-249.305-193.99l-12.244-11.5-7,6.467-.954-1.007,7.951-7.368,13.2,12.4-.954,1.007" transform="translate(269.712 213.124)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-15-6" data-name="Fill-15" d="M-231.625-193.812l-4.081-3.286-3.392,2.809-.9-1.113,4.293-3.5,4.929,4.028-.848,1.06" transform="translate(255.848 209.13)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                </g>
+            </g>
+        </g>
+        <g id="Group_68" data-name="Group 68" transform="translate(1749.172 156.452) rotate(30)" opacity="0.36">
+            <g id="Rectangle_1172-3" data-name="Rectangle 1172" transform="translate(64 796)" fill="none" stroke="#474747" stroke-width="5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#bbb5ac;">
+                <rect width="366" height="444" rx="5" stroke="none" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke:none;"></rect>
+                <rect x="2.5" y="2.5" width="361" height="439" rx="2.5" fill="none" data-darkreader-inline-fill="" style="--darkreader-inline-fill:none;"></rect>
+            </g>
+            <rect id="Rectangle_1174-3" data-name="Rectangle 1174" width="366" height="98" rx="5" transform="translate(64 1142)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1175-3" data-name="Rectangle 1175" width="166" height="21" rx="10.5" transform="translate(106 913)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <g id="Repeat_Grid_2-3" data-name="Repeat Grid 2" transform="translate(357 848)" clip-path="url(#clip-path)">
+                <g transform="translate(-366 -853)">
+                    <rect id="Rectangle_1184-7" data-name="Rectangle 1184" width="24" height="4" rx="2" transform="translate(366 853)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#bbb5ac;"></rect>
+                </g>
+                <g transform="translate(-366 -846)">
+                    <rect id="Rectangle_1184-8" data-name="Rectangle 1184" width="24" height="4" rx="2" transform="translate(366 853)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#bbb5ac;"></rect>
+                </g>
+                <g transform="translate(-366 -839)">
+                    <rect id="Rectangle_1184-9" data-name="Rectangle 1184" width="24" height="4" rx="2" transform="translate(366 853)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#bbb5ac;"></rect>
+                </g>
+            </g>
+            <rect id="Rectangle_1176-3" data-name="Rectangle 1176" width="243" height="21" rx="10.5" transform="translate(106 952)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1177-3" data-name="Rectangle 1177" width="275" height="21" rx="10.5" transform="translate(106 991)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1178-3" data-name="Rectangle 1178" width="275" height="21" rx="10.5" transform="translate(106 1052)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1183-3" data-name="Rectangle 1183" width="186" height="21" rx="10.5" transform="translate(106 1089)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <g id="iconfinder_picture_1814111_1_7" data-name="iconfinder_picture_1814111 (1)" transform="translate(98.156 833.8)">
+                <g id="Icon-Image-7" data-name="Icon-Image" transform="translate(8.1 13.8)">
+                    <path id="Fill-12-7" data-name="Fill-12" d="M-246.737-198.8h-20.937a2.24,2.24,0,0,1-2.226-2.226v-14.947a2.24,2.24,0,0,1,2.226-2.226h20.937a2.24,2.24,0,0,1,2.226,2.226v14.947a2.24,2.24,0,0,1-2.226,2.226Zm-20.99-17.969a.725.725,0,0,0-.742.742v14.947a.725.725,0,0,0,.742.742h20.937a.725.725,0,0,0,.742-.742v-14.947a.725.725,0,0,0-.742-.742Z" transform="translate(269.9 218.2)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-13-7" data-name="Fill-13" d="M-241.485-206.67a2.907,2.907,0,0,1-2.915-2.915,2.941,2.941,0,0,1,2.915-2.915,2.941,2.941,0,0,1,2.915,2.915,2.941,2.941,0,0,1-2.915,2.915Zm0-4.505a1.538,1.538,0,0,0-1.537,1.537,1.538,1.538,0,0,0,1.537,1.537,1.538,1.538,0,0,0,1.537-1.537,1.538,1.538,0,0,0-1.537-1.537Z" transform="translate(257.916 215.521)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-14-7" data-name="Fill-14" d="M-249.305-193.99l-12.244-11.5-7,6.467-.954-1.007,7.951-7.368,13.2,12.4-.954,1.007" transform="translate(269.712 213.124)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-15-7" data-name="Fill-15" d="M-231.625-193.812l-4.081-3.286-3.392,2.809-.9-1.113,4.293-3.5,4.929,4.028-.848,1.06" transform="translate(255.848 209.13)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                </g>
+            </g>
+        </g>
+        <g id="Group_57" data-name="Group 57" transform="translate(631.609 -1041.875) rotate(30)" opacity="0.36">
+            <g id="Rectangle_1165" data-name="Rectangle 1165" transform="translate(453 796)" fill="none" stroke="#474747" stroke-width="5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#bbb5ac;">
+                <rect width="366" height="444" rx="5" stroke="none" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke:none;"></rect>
+                <rect x="2.5" y="2.5" width="361" height="439" rx="2.5" fill="none" data-darkreader-inline-fill="" style="--darkreader-inline-fill:none;"></rect>
+            </g>
+            <g id="Rectangle_1168" data-name="Rectangle 1168" transform="translate(453 917)" fill="none" stroke="#474747" stroke-width="5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#bbb5ac;">
+                <rect width="366" height="323" rx="5" stroke="none" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke:none;"></rect>
+                <rect x="2.5" y="2.5" width="361" height="318" rx="2.5" fill="none" data-darkreader-inline-fill="" style="--darkreader-inline-fill:none;"></rect>
+            </g>
+            <rect id="Rectangle_1166" data-name="Rectangle 1166" width="115" height="444" rx="5" transform="translate(453 796)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1169" data-name="Rectangle 1169" width="166" height="21" rx="10.5" transform="translate(596 950)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1170" data-name="Rectangle 1170" width="110" height="21" rx="10.5" transform="translate(596 989)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1171" data-name="Rectangle 1171" width="186" height="21" rx="10.5" transform="translate(596 1052)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1171-2" data-name="Rectangle 1171" width="186" height="21" rx="10.5" transform="translate(596 1089)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1171-3" data-name="Rectangle 1171" width="186" height="21" rx="10.5" transform="translate(596 1126)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1167" data-name="Rectangle 1167" width="81" height="21" rx="10.5" transform="translate(470 916)" fill="#343434" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#272a2c;"></rect>
+            <rect id="Rectangle_1167-2" data-name="Rectangle 1167" width="81" height="21" rx="10.5" transform="translate(470 950)" fill="#343434" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#272a2c;"></rect>
+            <rect id="Rectangle_1167-3" data-name="Rectangle 1167" width="81" height="21" rx="10.5" transform="translate(470 984)" fill="#343434" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#272a2c;"></rect>
+            <rect id="Rectangle_1167-4" data-name="Rectangle 1167" width="81" height="21" rx="10.5" transform="translate(470 1018)" fill="#343434" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#272a2c;"></rect>
+            <g id="iconfinder_picture_1814111_1_8" data-name="iconfinder_picture_1814111 (1)" transform="translate(655.156 833.8)">
+                <g id="Icon-Image-8" data-name="Icon-Image" transform="translate(8.1 13.8)">
+                    <path id="Fill-12-8" data-name="Fill-12" d="M-246.737-198.8h-20.937a2.24,2.24,0,0,1-2.226-2.226v-14.947a2.24,2.24,0,0,1,2.226-2.226h20.937a2.24,2.24,0,0,1,2.226,2.226v14.947a2.24,2.24,0,0,1-2.226,2.226Zm-20.99-17.969a.725.725,0,0,0-.742.742v14.947a.725.725,0,0,0,.742.742h20.937a.725.725,0,0,0,.742-.742v-14.947a.725.725,0,0,0-.742-.742Z" transform="translate(269.9 218.2)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-13-8" data-name="Fill-13" d="M-241.485-206.67a2.907,2.907,0,0,1-2.915-2.915,2.941,2.941,0,0,1,2.915-2.915,2.941,2.941,0,0,1,2.915,2.915,2.941,2.941,0,0,1-2.915,2.915Zm0-4.505a1.538,1.538,0,0,0-1.537,1.537,1.538,1.538,0,0,0,1.537,1.537,1.538,1.538,0,0,0,1.537-1.537,1.538,1.538,0,0,0-1.537-1.537Z" transform="translate(257.916 215.521)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-14-8" data-name="Fill-14" d="M-249.305-193.99l-12.244-11.5-7,6.467-.954-1.007,7.951-7.368,13.2,12.4-.954,1.007" transform="translate(269.712 213.124)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-15-8" data-name="Fill-15" d="M-231.625-193.812l-4.081-3.286-3.392,2.809-.9-1.113,4.293-3.5,4.929,4.028-.848,1.06" transform="translate(255.848 209.13)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                </g>
+            </g>
+            <circle id="Ellipse_16" data-name="Ellipse 16" cx="22" cy="22" r="22" transform="translate(489 835)" fill="#474747" stroke="#343434" stroke-width="3" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#353a3c; --darkreader-inline-stroke:#c7c2bb;"></circle>
+        </g>
+        <g id="Group_60" data-name="Group 60" transform="translate(1048.306 -191.613) rotate(30)" opacity="0.36">
+            <g id="Rectangle_1165-2" data-name="Rectangle 1165" transform="translate(453 796)" fill="none" stroke="#474747" stroke-width="5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#bbb5ac;">
+                <rect width="366" height="444" rx="5" stroke="none" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke:none;"></rect>
+                <rect x="2.5" y="2.5" width="361" height="439" rx="2.5" fill="none" data-darkreader-inline-fill="" style="--darkreader-inline-fill:none;"></rect>
+            </g>
+            <g id="Rectangle_1168-2" data-name="Rectangle 1168" transform="translate(453 917)" fill="none" stroke="#474747" stroke-width="5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#bbb5ac;">
+                <rect width="366" height="323" rx="5" stroke="none" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke:none;"></rect>
+                <rect x="2.5" y="2.5" width="361" height="318" rx="2.5" fill="none" data-darkreader-inline-fill="" style="--darkreader-inline-fill:none;"></rect>
+            </g>
+            <rect id="Rectangle_1166-2" data-name="Rectangle 1166" width="115" height="444" rx="5" transform="translate(453 796)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1169-2" data-name="Rectangle 1169" width="166" height="21" rx="10.5" transform="translate(596 950)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1170-2" data-name="Rectangle 1170" width="110" height="21" rx="10.5" transform="translate(596 989)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1171-4" data-name="Rectangle 1171" width="186" height="21" rx="10.5" transform="translate(596 1052)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1171-5" data-name="Rectangle 1171" width="186" height="21" rx="10.5" transform="translate(596 1089)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1171-6" data-name="Rectangle 1171" width="186" height="21" rx="10.5" transform="translate(596 1126)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1167-5" data-name="Rectangle 1167" width="81" height="21" rx="10.5" transform="translate(470 916)" fill="#343434" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#272a2c;"></rect>
+            <rect id="Rectangle_1167-6" data-name="Rectangle 1167" width="81" height="21" rx="10.5" transform="translate(470 950)" fill="#343434" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#272a2c;"></rect>
+            <rect id="Rectangle_1167-7" data-name="Rectangle 1167" width="81" height="21" rx="10.5" transform="translate(470 984)" fill="#343434" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#272a2c;"></rect>
+            <rect id="Rectangle_1167-8" data-name="Rectangle 1167" width="81" height="21" rx="10.5" transform="translate(470 1018)" fill="#343434" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#272a2c;"></rect>
+            <g id="iconfinder_picture_1814111_1_9" data-name="iconfinder_picture_1814111 (1)" transform="translate(655.156 833.8)">
+                <g id="Icon-Image-9" data-name="Icon-Image" transform="translate(8.1 13.8)">
+                    <path id="Fill-12-9" data-name="Fill-12" d="M-246.737-198.8h-20.937a2.24,2.24,0,0,1-2.226-2.226v-14.947a2.24,2.24,0,0,1,2.226-2.226h20.937a2.24,2.24,0,0,1,2.226,2.226v14.947a2.24,2.24,0,0,1-2.226,2.226Zm-20.99-17.969a.725.725,0,0,0-.742.742v14.947a.725.725,0,0,0,.742.742h20.937a.725.725,0,0,0,.742-.742v-14.947a.725.725,0,0,0-.742-.742Z" transform="translate(269.9 218.2)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-13-9" data-name="Fill-13" d="M-241.485-206.67a2.907,2.907,0,0,1-2.915-2.915,2.941,2.941,0,0,1,2.915-2.915,2.941,2.941,0,0,1,2.915,2.915,2.941,2.941,0,0,1-2.915,2.915Zm0-4.505a1.538,1.538,0,0,0-1.537,1.537,1.538,1.538,0,0,0,1.537,1.537,1.538,1.538,0,0,0,1.537-1.537,1.538,1.538,0,0,0-1.537-1.537Z" transform="translate(257.916 215.521)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-14-9" data-name="Fill-14" d="M-249.305-193.99l-12.244-11.5-7,6.467-.954-1.007,7.951-7.368,13.2,12.4-.954,1.007" transform="translate(269.712 213.124)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-15-9" data-name="Fill-15" d="M-231.625-193.812l-4.081-3.286-3.392,2.809-.9-1.113,4.293-3.5,4.929,4.028-.848,1.06" transform="translate(255.848 209.13)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                </g>
+            </g>
+            <circle id="Ellipse_16-2" data-name="Ellipse 16" cx="22" cy="22" r="22" transform="translate(489 835)" fill="#474747" stroke="#343434" stroke-width="3" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#353a3c; --darkreader-inline-stroke:#c7c2bb;"></circle>
+        </g>
+        <g id="Group_69" data-name="Group 69" transform="translate(0.262 -734.348) rotate(30)" opacity="0.36">
+            <g id="Rectangle_1165-3" data-name="Rectangle 1165" transform="translate(453 796)" fill="none" stroke="#474747" stroke-width="5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#bbb5ac;">
+                <rect width="366" height="444" rx="5" stroke="none" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke:none;"></rect>
+                <rect x="2.5" y="2.5" width="361" height="439" rx="2.5" fill="none" data-darkreader-inline-fill="" style="--darkreader-inline-fill:none;"></rect>
+            </g>
+            <g id="Rectangle_1168-3" data-name="Rectangle 1168" transform="translate(453 917)" fill="none" stroke="#474747" stroke-width="5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#bbb5ac;">
+                <rect width="366" height="323" rx="5" stroke="none" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke:none;"></rect>
+                <rect x="2.5" y="2.5" width="361" height="318" rx="2.5" fill="none" data-darkreader-inline-fill="" style="--darkreader-inline-fill:none;"></rect>
+            </g>
+            <rect id="Rectangle_1166-3" data-name="Rectangle 1166" width="115" height="444" rx="5" transform="translate(453 796)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1169-3" data-name="Rectangle 1169" width="166" height="21" rx="10.5" transform="translate(596 950)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1170-3" data-name="Rectangle 1170" width="110" height="21" rx="10.5" transform="translate(596 989)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1171-7" data-name="Rectangle 1171" width="186" height="21" rx="10.5" transform="translate(596 1052)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1171-8" data-name="Rectangle 1171" width="186" height="21" rx="10.5" transform="translate(596 1089)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1171-9" data-name="Rectangle 1171" width="186" height="21" rx="10.5" transform="translate(596 1126)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1167-9" data-name="Rectangle 1167" width="81" height="21" rx="10.5" transform="translate(470 916)" fill="#343434" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#272a2c;"></rect>
+            <rect id="Rectangle_1167-10" data-name="Rectangle 1167" width="81" height="21" rx="10.5" transform="translate(470 950)" fill="#343434" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#272a2c;"></rect>
+            <rect id="Rectangle_1167-11" data-name="Rectangle 1167" width="81" height="21" rx="10.5" transform="translate(470 984)" fill="#343434" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#272a2c;"></rect>
+            <rect id="Rectangle_1167-12" data-name="Rectangle 1167" width="81" height="21" rx="10.5" transform="translate(470 1018)" fill="#343434" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#272a2c;"></rect>
+            <g id="iconfinder_picture_1814111_1_10" data-name="iconfinder_picture_1814111 (1)" transform="translate(655.156 833.8)">
+                <g id="Icon-Image-10" data-name="Icon-Image" transform="translate(8.1 13.8)">
+                    <path id="Fill-12-10" data-name="Fill-12" d="M-246.737-198.8h-20.937a2.24,2.24,0,0,1-2.226-2.226v-14.947a2.24,2.24,0,0,1,2.226-2.226h20.937a2.24,2.24,0,0,1,2.226,2.226v14.947a2.24,2.24,0,0,1-2.226,2.226Zm-20.99-17.969a.725.725,0,0,0-.742.742v14.947a.725.725,0,0,0,.742.742h20.937a.725.725,0,0,0,.742-.742v-14.947a.725.725,0,0,0-.742-.742Z" transform="translate(269.9 218.2)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-13-10" data-name="Fill-13" d="M-241.485-206.67a2.907,2.907,0,0,1-2.915-2.915,2.941,2.941,0,0,1,2.915-2.915,2.941,2.941,0,0,1,2.915,2.915,2.941,2.941,0,0,1-2.915,2.915Zm0-4.505a1.538,1.538,0,0,0-1.537,1.537,1.538,1.538,0,0,0,1.537,1.537,1.538,1.538,0,0,0,1.537-1.537,1.538,1.538,0,0,0-1.537-1.537Z" transform="translate(257.916 215.521)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-14-10" data-name="Fill-14" d="M-249.305-193.99l-12.244-11.5-7,6.467-.954-1.007,7.951-7.368,13.2,12.4-.954,1.007" transform="translate(269.712 213.124)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                    <path id="Fill-15-10" data-name="Fill-15" d="M-231.625-193.812l-4.081-3.286-3.392,2.809-.9-1.113,4.293-3.5,4.929,4.028-.848,1.06" transform="translate(255.848 209.13)" fill="#595959" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#b0a99f;"></path>
+                </g>
+            </g>
+            <circle id="Ellipse_16-3" data-name="Ellipse 16" cx="22" cy="22" r="22" transform="translate(489 835)" fill="#474747" stroke="#343434" stroke-width="3" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#353a3c; --darkreader-inline-stroke:#c7c2bb;"></circle>
+        </g>
+        <g id="Group_58" data-name="Group 58" transform="translate(584.109 -959.602) rotate(30)" opacity="0.36">
+            <g id="Rectangle_1153" data-name="Rectangle 1153" transform="translate(846 796)" fill="none" stroke="#474747" stroke-width="5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#bbb5ac;">
+                <rect width="366" height="444" rx="5" stroke="none" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke:none;"></rect>
+                <rect x="2.5" y="2.5" width="361" height="439" rx="2.5" fill="none" data-darkreader-inline-fill="" style="--darkreader-inline-fill:none;"></rect>
+            </g>
+            <g id="Rectangle_1162" data-name="Rectangle 1162" transform="translate(879 1073)" fill="none" stroke="#474747" stroke-width="5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#bbb5ac;">
+                <rect width="132" height="138" rx="5" stroke="none" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke:none;"></rect>
+                <rect x="2.5" y="2.5" width="127" height="133" rx="2.5" fill="none" data-darkreader-inline-fill="" style="--darkreader-inline-fill:none;"></rect>
+            </g>
+            <g id="Rectangle_1163" data-name="Rectangle 1163" transform="translate(1039 1073)" fill="none" stroke="#474747" stroke-width="5" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:none; --darkreader-inline-stroke:#bbb5ac;">
+                <rect width="137" height="138" rx="5" stroke="none" data-darkreader-inline-stroke="" style="--darkreader-inline-stroke:none;"></rect>
+                <rect x="2.5" y="2.5" width="132" height="133" rx="2.5" fill="none" data-darkreader-inline-fill="" style="--darkreader-inline-fill:none;"></rect>
+            </g>
+            <rect id="Rectangle_1157" data-name="Rectangle 1157" width="221" height="21" rx="10.5" transform="translate(877 977)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <rect id="Rectangle_1164" data-name="Rectangle 1164" width="299" height="21" rx="10.5" transform="translate(877 1016)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></rect>
+            <path id="Path_39" data-name="Path 39" d="M9783.593,5330s33.307-56.167,136.384-43.4,105.615-51.77,222.077-13.769c1,1,0-100.539,0-100.539H9783.593Z" transform="translate(-8934 -4374)" fill="#474747" data-darkreader-inline-fill="" style="--darkreader-inline-fill:#353a3c;"></path>
+            <circle id="Ellipse_12" data-name="Ellipse 12" cx="9" cy="9" r="9" transform="translate(1134 877)" fill="#474747" stroke="#343434" stroke-width="3" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#bbb5ac; --darkreader-inline-stroke:#c7c2bb;"></circle>
+            <circle id="Ellipse_13" data-name="Ellipse 13" cx="9" cy="9" r="9" transform="translate(1055 899)" fill="#474747" stroke="#343434" stroke-width="3" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#bbb5ac; --darkreader-inline-stroke:#c7c2bb;"></circle>
+            <circle id="Ellipse_14" data-name="Ellipse 14" cx="9" cy="9" r="9" transform="translate(972 903)" fill="#474747" stroke="#343434" stroke-width="3" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#bbb5ac; --darkreader-inline-stroke:#c7c2bb;"></circle>
+            <circle id="Ellipse_15" data-name="Ellipse 15" cx="9" cy="9" r="9" transform="translate(878 917)" fill="#474747" stroke="#343434" stroke-width="3" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:#bbb5ac; --darkreader-inline-stroke:#c7c2bb;"></circle>
+        </g>
+    </g>
+</svg>

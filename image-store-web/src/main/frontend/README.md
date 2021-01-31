@@ -1,6 +1,6 @@
 # image-store-web
 
-## Project setup
+## Frontend setup
 ```
 yarn install
 ```
