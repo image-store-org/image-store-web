@@ -8,12 +8,13 @@
 </template>
 
 <script>
-    import {ref} from "vue";
+    import { defineComponent } from "vue";
+    import { ref } from "vue";
     import Loader from "@/scripts/vue/components/Loader";
     import Navbar from "@/scripts/vue/components/Navbar";
     import Toast from "primevue/toast";
 
-    export default {
+    export default defineComponent({
         components: { Navbar, Loader, Toast },
         setup() {
             const isLoading = ref(true);
@@ -26,7 +27,7 @@
                 isLoading
             }
         }
-    }
+    });
 </script>
 
 <style lang="scss">
