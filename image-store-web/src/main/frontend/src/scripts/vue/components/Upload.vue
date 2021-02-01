@@ -6,16 +6,20 @@
          @dragleave="OnUploadDragLeave">
         <div class="file-input-container"
              :class="{ 'file-input--file-hover': isFileHoverContainer }"
-             ref="fileInputContainerElement"
-             @click="$refs.fileInputElement.click()">
+             ref="fileInputContainerElement">
             <input class="file-input"
                    type="file"
                    required
                    multiple
                    accept="image/jpeg"
                    ref="fileInputElement"
-                   @change="onFileInputChange"/>
-            <i class="file-input__icon pi pi-download"></i>
+                   @change.prevent="onFileInputChange"/>
+            <i class="file-input__icon pi pi-download" />
+            <Button class="p-button-secondary"
+                    label="Choose"
+                    icon="pi pi-images"
+                    iconPos="right"
+                    @click.prevent="$refs.fileInputElement.click()" />
         </div>
 
         <div class="preview-list-container--outer">
@@ -34,11 +38,13 @@
 </template>
 
 <script lang="ts">
-    import {defineComponent, ref} from "vue";
+    import { defineComponent, ref } from "vue";
     import FileUtils from "@/scripts/ts/utils/FileUtils";
     import { useToast } from "primevue/usetoast";
+    import Button from 'primevue/button';
 
     export default defineComponent({
+        components: { Button },
         setup() {
             const toast = useToast();
             const fileList = ref<File[]>([]);
@@ -186,14 +192,15 @@
     $color-secondary: $color-still-water;
     .upload .file-input-container {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         outline: 2px dashed $color-secondary;
         outline-offset: -10px;
         transition: outline-offset .15s ease-in-out, background-color .15s linear;
         background-color: $color-primary;
-        padding: 65px 90px;
+        padding: 65px 0;
         @include respond(desktop) {
-            padding: 140px 315px
+            padding: 80px 0;
         }
         &.file-input--file-hover {
             background-color: $color-indigo-white;
@@ -207,5 +214,8 @@
     .upload .file-input-container .file-input__icon {
         color: $color-secondary;
         font-size: 100px;
+    }
+    .upload .file-input-container button {
+        margin-top: 30px;
     }
 </style>
