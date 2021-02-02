@@ -11,7 +11,7 @@
                    type="file"
                    required
                    multiple
-                   accept="image/jpeg"
+                   :accept="fileExtensionsList"
                    ref="fileInputElement"
                    @change.prevent="onFileInputChange"/>
             <i class="file-input__icon pi pi-download" />
@@ -21,7 +21,7 @@
                     iconPos="right"
                     @click.prevent="$refs.fileInputElement.click()" />
         </div>
-        <image-table v-show="fileList.length"
+        <file-table v-show="fileList.length"
                      :file-list="fileList" />
     </div>
 </template>
@@ -31,11 +31,12 @@
     import { useToast } from "primevue/usetoast";
     import Button from "primevue/button";
     import FileUtils from "@/scripts/ts/utils/FileUtils";
-    import ImageTable from "@/scripts/vue/components/FileTable.vue";
+    import FileTable from "@/scripts/vue/components/FileTable.vue";
+    import RegExUtils from "@/scripts/ts/utils/RegExUtils";
 
     export default defineComponent({
         name: "upload",
-        components: {ImageTable, Button },
+        components: { FileTable, Button },
         setup() {
             const toast = useToast();
             const fileList = ref<File[]>([]);
@@ -45,6 +46,7 @@
             const filesTotalSizeBytes = ref<number>(0);
             const filesMaxSizeBytes: number = 3495253;
             const isFileHoverContainer = ref<boolean>(false);
+            const fileExtensionsList: string[] = [".jpg"];
             return {
                 toast,
                 fileList,
@@ -53,7 +55,8 @@
                 previewListElement,
                 filesTotalSizeBytes,
                 filesMaxSizeBytes,
-                isFileHoverContainer
+                isFileHoverContainer,
+                fileExtensionsList
             }
         },
         methods: {
@@ -110,11 +113,20 @@
                 this.fileList = [];
             },
             _isFileValid(file: File): boolean {
-                return !(
-                    !this._isFileDuplicationValid(file) ||
-                    !this._isFileSizeValid(file) ||
-                    !this._isFilesTotalSizeValid()
-                );
+                return this._isFileExtensionValid(file) &&
+                    this._isFileDuplicationValid(file) &&
+                    this._isFileSizeValid(file) &&
+                    this._isFilesTotalSizeValid();
+            },
+            _isFileExtensionValid(file: File): boolean {
+                const ext: string = file.name.match(RegExUtils.FILE_EXTENSION)![0];
+                const extToLower: string = ext.toLowerCase();
+                let isValid: boolean = this.fileExtensionsList
+                    .some((allowedExt: string) => extToLower === allowedExt.toLowerCase());
+                if(!isValid) {
+                    this._errorFileExtension(file);
+                }
+                return isValid;
             },
             _isFileDuplicationValid(file: File): boolean {
                 for (let i = 0; i < this.fileList.length; i++) {
@@ -155,6 +167,14 @@
                     life: 10000
                 });
             },
+            _errorFileExtension(file: File): void {
+                this.toast.add({
+                    severity: "error",
+                    summary: "Invalid file extension",
+                    detail:`${file.name} has an unsupported file extension. Supported extensions: ${this.fileExtensionsList}`,
+                    life: 10000
+                });
+            },
             _errorFileDuplicate(file: File): void {
                 this.toast.add({
                     severity: "error",
@@ -163,7 +183,7 @@
                     life: 10000
                 });
             },
-            _errorFileSize(totalBytes: number, maxBytes: number): void {
+                _errorFileSize(totalBytes: number, maxBytes: number): void {
                 let totalBytesString: string = "Total file size: " + FileUtils.formatBytes(totalBytes);
                 let maxBytesString: string = FileUtils.formatBytes(maxBytes);
                 let detail: string = `${totalBytesString}. Max total file size: ${maxBytesString}`;

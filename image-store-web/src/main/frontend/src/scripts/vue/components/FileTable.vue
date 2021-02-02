@@ -1,34 +1,25 @@
 <template>
-        <table class="file-table">
-            <tr v-for="file in fileList">
-                {{ file.name }}
-            </tr>
-        </table>
+        <div class="file-table">
+            <table>
+                <file-table-row v-for="file in fileList"
+                                :file="file"/>
+            </table>
+        </div>
+
 </template>
 
 <script lang="ts">
     import { defineComponent, PropType } from "vue";
-    import { useToast } from "primevue/usetoast";
+    import FileTableRow from "@/scripts/vue/components/FileTableRow.vue";
 
     export default defineComponent({
         name: "file-table",
+        components: { FileTableRow },
         props: {
             fileList: {
                 type: Object as PropType<File[]>,
                 required: true
             }
-        },
-        setup() {
-            const toast = useToast();
-            return {
-                toast
-            }
-        },
-        data() {
-            return {
-            }
-        },
-        methods: {
         }
     });
 </script>
