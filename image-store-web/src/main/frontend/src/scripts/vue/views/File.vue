@@ -6,7 +6,7 @@
         </header>
         <card>
             <template #title>
-                {{ regexUtils.getCurrentRouteFinalSubPath($router.currentRoute.value.path) }}
+                <h3>{{ regexUtils.getCurrentRouteFinalSubPath($router.currentRoute.value.path) }}</h3>
             </template>
             <template #content>
                 <router-view></router-view>
