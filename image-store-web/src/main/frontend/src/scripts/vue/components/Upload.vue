@@ -39,11 +39,12 @@
 
 <script lang="ts">
     import { defineComponent, ref } from "vue";
-    import FileUtils from "@/scripts/ts/utils/FileUtils";
     import { useToast } from "primevue/usetoast";
-    import Button from 'primevue/button';
+    import Button from "primevue/button";
+    import FileUtils from "@/scripts/ts/utils/FileUtils";
 
     export default defineComponent({
+        name: "upload",
         components: { Button },
         setup() {
             const toast = useToast();
@@ -155,8 +156,8 @@
                 }
             },
             _successAddFiles(fileNames: string[]): void {
-                let detail: string = fileNames.toString().replace(new RegExp(",", "g"), ", ");
-                let detailTrail: string = ` ${fileNames.length > 1 ? "were" : "was"} added successfully`;
+                let detail: string = fileNames.length > 1 ? fileNames.length + " files were" : fileNames + " was";
+                let detailTrail: string = " added successfully";
                 this.toast.add({
                     severity: "success",
                     summary: "Success!",
@@ -204,7 +205,7 @@
         }
         &.file-input--file-hover {
             background-color: $color-indigo-white;
-            outline-color: $color-columbia-blue;
+            outline-color: $color-winter-teal;
             outline-offset: -20px;
         }
     }

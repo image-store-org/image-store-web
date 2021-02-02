@@ -1,5 +1,6 @@
 $desktop__padding-horizontal: 125px;
 $mobile__padding-horizontal: 15px;
+$mobile__padding-vertical: 15px;
 
 html, body {
     height: 100%;
@@ -13,7 +14,7 @@ nav .p-menubar {
     }
 }
 article {
-    padding: 0 $mobile__padding-horizontal;
+    padding: 0 $mobile__padding-horizontal $mobile__padding-vertical;
     @include respond(desktop) {
         padding: 0 $desktop__padding-horizontal;
     }
