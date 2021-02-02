@@ -1,12 +1,12 @@
 <template>
-    <div class="upload"
-         @drop.prevent="OnUploadDragDrop"
-         @dragover.prevent="OnUploadDragEnter"
-         @dragenter.prevent="OnUploadDragEnter"
-         @dragleave="OnUploadDragLeave">
+    <div class="upload">
         <div class="file-input-container"
              :class="{ 'file-input--file-hover': isFileHoverContainer }"
-             ref="fileInputContainerElement">
+             ref="fileInputContainerElement"
+             @drop.prevent="OnUploadDragDrop"
+             @dragover.prevent="OnUploadDragEnter"
+             @dragenter.prevent="OnUploadDragEnter"
+             @dragleave="OnUploadDragLeave">
             <input class="file-input"
                    type="file"
                    required
@@ -21,19 +21,8 @@
                     iconPos="right"
                     @click.prevent="$refs.fileInputElement.click()" />
         </div>
-
-        <div class="preview-list-container--outer">
-            <div class="preview-list-container--inner">
-                <ul v-if="fileList.length"
-                          class="preview-list"
-                          ref="previewListElement"
-                          v-cloak>
-                    <li v-for="file in fileList">
-                        {{ file.name }}
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <image-table v-show="fileList.length"
+                     :file-list="fileList" />
     </div>
 </template>
 
@@ -42,10 +31,11 @@
     import { useToast } from "primevue/usetoast";
     import Button from "primevue/button";
     import FileUtils from "@/scripts/ts/utils/FileUtils";
+    import ImageTable from "@/scripts/vue/components/FileTable.vue";
 
     export default defineComponent({
         name: "upload",
-        components: { Button },
+        components: {ImageTable, Button },
         setup() {
             const toast = useToast();
             const fileList = ref<File[]>([]);
