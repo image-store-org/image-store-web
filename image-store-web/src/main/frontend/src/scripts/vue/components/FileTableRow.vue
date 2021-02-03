@@ -1,8 +1,8 @@
 <template>
     <tr class="file-table-row">
-        <td><img :src="fileUrl" :alt="file.name"/></td>
         <td>{{ file.name }}</td>
         <td>{{ fileUtils.formatBytes(file.size, 0) }}</td>
+        <td><img :src="fileUrl" :alt="file.name"/></td>
     </tr>
 </template>
 
@@ -28,6 +28,20 @@ import FileUtils from "@/scripts/ts/utils/FileUtils";
     });
 </script>
 
-<style scoped>
-
+<style lang="scss">
+    $td__height: 80px;
+    $td__width: 80px;
+    .file-table-row {
+        display: flex;
+    }
+    .file-table-row td {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: $td__height;
+        width: $td__width;
+    }
+    .file-table-row td img {
+        width: 25px;
+    }
 </style>
