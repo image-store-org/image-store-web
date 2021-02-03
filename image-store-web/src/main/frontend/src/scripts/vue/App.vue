@@ -32,6 +32,6 @@
 
 <style lang="scss">
     @import "src/css/scss/base/html";
-    @import "src/css/scss/overrides/toast";
-    @import "src/css/scss/overrides/card";
+    @import "../../css/scss/overrides/p-card";
+    @import "../../css/scss/overrides/p-toast";
 </style>
