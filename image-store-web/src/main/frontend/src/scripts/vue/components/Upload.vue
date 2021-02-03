@@ -22,7 +22,7 @@
                     @click.prevent="$refs.fileInputElement.click()" />
         </div>
         <file-table v-show="fileList.length"
-                     :file-list="fileList" />
+                    :file-list="fileList" />
     </div>
 </template>
 
@@ -201,18 +201,30 @@
 <style lang="scss">
     $color-primary: $color-winter-teal;
     $color-secondary: $color-still-water;
+    .upload {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        @include respond(desktop) {
+            align-items: flex-start;
+            flex-direction: row;
+            height: 330px;
+        }
+    }
     .upload .file-input-container {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+        flex-basis: 50%;
         outline: 2px dashed $color-secondary;
         outline-offset: -10px;
         transition: outline-offset .15s ease-in-out, background-color .15s linear;
         background-color: $color-primary;
-        padding: 65px 0;
-        @include respond(desktop) {
-            padding: 80px 0;
-        }
+        padding: 20px 0;
+        height: 100%;
+        width: 100%;
         &.file-input--file-hover {
             background-color: $color-indigo-white;
             outline-color: $color-winter-teal;
@@ -228,5 +240,16 @@
     }
     .upload .file-input-container button {
         margin-top: 30px;
+    }
+    .upload .file-table {
+        justify-content: center;
+        height: 250px;
+        overflow: auto;
+        margin-top: 30px;
+        flex-basis: 45%;
+        @include respond(desktop) {
+            height: 100%;
+            margin: 0;
+        }
     }
 </style>

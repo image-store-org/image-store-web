@@ -1,11 +1,8 @@
 <template>
-        <div class="file-table">
-            <table>
-                <file-table-row v-for="file in fileList"
-                                :file="file"/>
-            </table>
-        </div>
-
+        <ul class="file-table">
+            <file-table-row v-for="file in fileList"
+                            :file="file"/>
+        </ul>
 </template>
 
 <script lang="ts">
@@ -24,4 +21,11 @@
     });
 </script>
 
-<style></style>
+<style lang="scss">
+    .file-table {
+        width: 90%;
+        @include respond(mobile) {
+            width: 100%;
+        }
+    }
+</style>
