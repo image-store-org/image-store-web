@@ -1,6 +1,7 @@
 .p-card.p-component {
     background: $color-focoltone;
 }
-.p-card .p-card-body .p-card-title {
+.p-card .p-card-body .p-card-title h3 {
+    margin: 0;
     text-transform: capitalize;
 }
