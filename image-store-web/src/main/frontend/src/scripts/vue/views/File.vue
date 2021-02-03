@@ -4,14 +4,29 @@
             <i class="pi pi-file"></i>
             <h1>File</h1>
         </header>
-        <router-view></router-view>
+        <card>
+            <template #title>
+                <h3>{{ regexUtils.getCurrentRouteFinalSubPath($router.currentRoute.value.path) }}</h3>
+            </template>
+            <template #content>
+                <router-view></router-view>
+            </template>
+        </card>
     </article>
 </template>
 
 <script>
     import {defineComponent} from "vue";
+    import Card from "primevue/card";
+    import RegExUtils from "@/scripts/ts/utils/RegExUtils";
 
     export default defineComponent({
+        components: { Card },
+        data() {
+            return {
+                regexUtils: RegExUtils
+            }
+        }
     });
 </script>
 
@@ -19,6 +34,5 @@
     .file {
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 </style>

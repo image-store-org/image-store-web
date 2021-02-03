@@ -9,10 +9,8 @@
 
 <script>
     import {defineComponent} from "vue";
-    import About from "@/scripts/vue/components/About.vue";
 
     export default defineComponent({
-        components: { About }
     });
 </script>
 

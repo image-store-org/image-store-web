@@ -1,5 +1,6 @@
 $desktop__padding-horizontal: 125px;
 $mobile__padding-horizontal: 15px;
+$mobile__padding-vertical: 15px;
 
 html, body {
     height: 100%;
@@ -13,7 +14,7 @@ nav .p-menubar {
     }
 }
 article {
-    padding: 0 $mobile__padding-horizontal;
+    padding: 0 $mobile__padding-horizontal $mobile__padding-vertical;
     @include respond(desktop) {
         padding: 0 $desktop__padding-horizontal;
     }
@@ -27,6 +28,9 @@ header {
 }
 header i.pi {
     font-size: 25px;
+    @include respond(mobile) {
+        font-size: 18px;
+    }
 }
 h1, h2, h3, h4, h5, h6, header {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;

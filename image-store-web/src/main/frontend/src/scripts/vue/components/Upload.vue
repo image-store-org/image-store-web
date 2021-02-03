@@ -1,44 +1,43 @@
 <template>
-    <div class="upload"
-         @drop.prevent="OnUploadDragDrop"
-         @dragover.prevent="OnUploadDragEnter"
-         @dragenter.prevent="OnUploadDragEnter"
-         @dragleave="OnUploadDragLeave">
+    <div class="upload">
         <div class="file-input-container"
              :class="{ 'file-input--file-hover': isFileHoverContainer }"
              ref="fileInputContainerElement"
-             @click="$refs.fileInputElement.click()">
+             @drop.prevent="OnUploadDragDrop"
+             @dragover.prevent="OnUploadDragEnter"
+             @dragenter.prevent="OnUploadDragEnter"
+             @dragleave="OnUploadDragLeave">
             <input class="file-input"
                    type="file"
                    required
                    multiple
-                   accept="image/jpeg"
+                   :accept="fileExtensionsList"
                    ref="fileInputElement"
-                   @change="onFileInputChange"/>
-            <i class="file-input__icon pi pi-download"></i>
+                   @change.prevent="onFileInputChange"/>
+            <i class="file-input__icon pi pi-download" />
+            <Button class="p-button-secondary"
+                    label="Choose"
+                    icon="pi pi-images"
+                    iconPos="right"
+                    @click.prevent="$refs.fileInputElement.click()" />
         </div>
-
-        <div class="preview-list-container--outer">
-            <div class="preview-list-container--inner">
-                <ul v-if="fileList.length"
-                          class="preview-list"
-                          ref="previewListElement"
-                          v-cloak>
-                    <li v-for="file in fileList">
-                        {{ file.name }}
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <file-table v-show="fileList.length"
+                    :file-list="fileList"
+                    @deleteFile="deleteFile" />
     </div>
 </template>
 
 <script lang="ts">
-    import {defineComponent, ref} from "vue";
-    import FileUtils from "@/scripts/ts/utils/FileUtils";
+    import { defineComponent, ref } from "vue";
     import { useToast } from "primevue/usetoast";
+    import Button from "primevue/button";
+    import FileUtils from "@/scripts/ts/utils/FileUtils";
+    import FileTable from "@/scripts/vue/components/FileTable.vue";
+    import RegExUtils from "@/scripts/ts/utils/RegExUtils";
 
     export default defineComponent({
+        name: "upload",
+        components: { FileTable, Button },
         setup() {
             const toast = useToast();
             const fileList = ref<File[]>([]);
@@ -48,6 +47,7 @@
             const filesTotalSizeBytes = ref<number>(0);
             const filesMaxSizeBytes: number = 3495253;
             const isFileHoverContainer = ref<boolean>(false);
+            const fileExtensionsList: string[] = [".jpg"];
             return {
                 toast,
                 fileList,
@@ -56,7 +56,8 @@
                 previewListElement,
                 filesTotalSizeBytes,
                 filesMaxSizeBytes,
-                isFileHoverContainer
+                isFileHoverContainer,
+                fileExtensionsList
             }
         },
         methods: {
@@ -96,11 +97,12 @@
                 }
                 this._successAddFiles(fileNames);
             },
-            _removeFile(previewIndex: number): boolean {
-                if (previewIndex >= 0) {
-                    const fileSize: number = this.fileList[previewIndex].size;
-                    if (this.fileList.splice(previewIndex, 1).length > 0) {
+            deleteFile(index: number, file: File): boolean {
+                if (index >= 0) {
+                    const fileSize: number = this.fileList[index].size;
+                    if (this.fileList.splice(index, 1).length > 0) {
                         this.filesTotalSizeBytes = this.filesTotalSizeBytes - fileSize;
+                        this._successDeleteFile(file.name)
                         return true;
                     } else {
                         return false;
@@ -109,15 +111,24 @@
                     return false;
                 }
             },
-            _removeFiles(): void {
+            _deleteFiles(): void {
                 this.fileList = [];
             },
             _isFileValid(file: File): boolean {
-                return !(
-                    !this._isFileDuplicationValid(file) ||
-                    !this._isFileSizeValid(file) ||
-                    !this._isFilesTotalSizeValid()
-                );
+                return this._isFileExtensionValid(file) &&
+                    this._isFileDuplicationValid(file) &&
+                    this._isFileSizeValid(file) &&
+                    this._isFilesTotalSizeValid();
+            },
+            _isFileExtensionValid(file: File): boolean {
+                const ext: string = file.name.match(RegExUtils.FILE_EXTENSION)![0];
+                const extToLower: string = ext.toLowerCase();
+                let isValid: boolean = this.fileExtensionsList
+                    .some((allowedExt: string) => extToLower === allowedExt.toLowerCase());
+                if(!isValid) {
+                    this._errorFileExtension(file);
+                }
+                return isValid;
             },
             _isFileDuplicationValid(file: File): boolean {
                 for (let i = 0; i < this.fileList.length; i++) {
@@ -149,12 +160,29 @@
                 }
             },
             _successAddFiles(fileNames: string[]): void {
-                let summarySubString: string = fileNames.length > 1 ? "Files" : "File";
-                let detail: string = fileNames.toString().replace(new RegExp(",", "g"), ", ");
+                let detail: string = fileNames.length > 1 ? fileNames.length + " files" : fileNames.toString();
+                let detailTrail: string = " added";
                 this.toast.add({
                     severity: "success",
-                    summary: `${summarySubString} added successfully`,
+                    summary: "Success!",
+                    detail: detail + detailTrail,
+                    life: 10000
+                });
+            },
+            _successDeleteFile(fileName: string): void {
+                let detail: string = fileName + " deleted";
+                this.toast.add({
+                    severity: "success",
+                    summary: "Success!",
                     detail: detail,
+                    life: 10000
+                });
+            },
+            _errorFileExtension(file: File): void {
+                this.toast.add({
+                    severity: "error",
+                    summary: "Invalid file extension",
+                    detail:`${file.name} has an unsupported file extension. Supported extensions: ${this.fileExtensionsList}`,
                     life: 10000
                 });
             },
@@ -184,20 +212,33 @@
 <style lang="scss">
     $color-primary: $color-winter-teal;
     $color-secondary: $color-still-water;
+    .upload {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        @include respond(desktop) {
+            align-items: flex-start;
+            flex-direction: row;
+            height: 330px;
+        }
+    }
     .upload .file-input-container {
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        flex-basis: 50%;
         outline: 2px dashed $color-secondary;
         outline-offset: -10px;
         transition: outline-offset .15s ease-in-out, background-color .15s linear;
         background-color: $color-primary;
-        padding: 65px 90px;
-        @include respond(desktop) {
-            padding: 140px 315px
-        }
+        padding: 20px 0;
+        height: 100%;
+        width: 100%;
         &.file-input--file-hover {
             background-color: $color-indigo-white;
-            outline-color: $color-columbia-blue;
+            outline-color: $color-winter-teal;
             outline-offset: -20px;
         }
     }
@@ -207,5 +248,19 @@
     .upload .file-input-container .file-input__icon {
         color: $color-secondary;
         font-size: 100px;
+    }
+    .upload .file-input-container button {
+        margin-top: 30px;
+    }
+    .upload .file-table {
+        justify-content: center;
+        height: 250px;
+        overflow: auto;
+        margin-top: 30px;
+        flex-basis: 45%;
+        @include respond(desktop) {
+            height: 100%;
+            margin: 0;
+        }
     }
 </style>
