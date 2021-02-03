@@ -194,7 +194,7 @@
                     life: 10000
                 });
             },
-                _errorFileSize(totalBytes: number, maxBytes: number): void {
+            _errorFileSize(totalBytes: number, maxBytes: number): void {
                 let totalBytesString: string = "Total file size: " + FileUtils.formatBytes(totalBytes);
                 let maxBytesString: string = FileUtils.formatBytes(maxBytes);
                 let detail: string = `${totalBytesString}. Max total file size: ${maxBytesString}`;
