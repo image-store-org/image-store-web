@@ -1,7 +1,10 @@
 <template>
         <ul class="file-table">
-            <file-table-row v-for="file in fileList"
-                            :file="file"/>
+            <file-table-row v-for="(file, index) in fileList"
+                            :file="file"
+                            :index="index"
+                            :key="index"
+                            @deleteFile="deleteFile" />
         </ul>
 </template>
 
@@ -16,6 +19,11 @@
             fileList: {
                 type: Object as PropType<File[]>,
                 required: true
+            }
+        },
+        methods: {
+            deleteFile(index: number, file: File): void {
+                this.$emit('deleteFile', index, file);
             }
         }
     });

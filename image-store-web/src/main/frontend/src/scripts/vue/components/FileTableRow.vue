@@ -8,18 +8,21 @@
             {{ fileUtils.formatBytes(file.size, 0) }}
         </div>
         <div class="file-table__cell preview">
-            <img :src="fileUrl" :alt="file.name" />
+            <img :src="fileUrl"
+                 :alt="file.name" />
         </div>
         <div class="file-table__cell delete">
-            <Button icon="pi pi-times" class="p-button-text" />
+            <Button icon="pi pi-times"
+                    class="p-button-text"
+                    @click="deleteFile(index, file)" />
         </div>
     </li>
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from "vue";
-import FileUtils from "@/scripts/ts/utils/FileUtils";
-import Button from "primevue/button";
+    import { defineComponent, PropType } from "vue";
+    import FileUtils from "@/scripts/ts/utils/FileUtils";
+    import Button from "primevue/button";
 
     export default defineComponent({
         components: { Button },
@@ -28,6 +31,10 @@ import Button from "primevue/button";
             file: {
                 type: Object as PropType<File>,
                 required: true
+            },
+            index: {
+                type: Object as PropType<number>,
+                required: true
             }
         },
         data() {
@@ -35,6 +42,11 @@ import Button from "primevue/button";
             return {
                 fileUtils: FileUtils,
                 fileUrl
+            }
+        },
+        methods: {
+            deleteFile(index: number, file: File): void {
+                this.$emit('deleteFile', index, file);
             }
         }
     });

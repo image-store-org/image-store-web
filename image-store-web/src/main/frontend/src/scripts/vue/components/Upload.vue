@@ -22,7 +22,8 @@
                     @click.prevent="$refs.fileInputElement.click()" />
         </div>
         <file-table v-show="fileList.length"
-                    :file-list="fileList" />
+                    :file-list="fileList"
+                    @deleteFile="deleteFile" />
     </div>
 </template>
 
@@ -96,11 +97,12 @@
                 }
                 this._successAddFiles(fileNames);
             },
-            _removeFile(previewIndex: number): boolean {
-                if (previewIndex >= 0) {
-                    const fileSize: number = this.fileList[previewIndex].size;
-                    if (this.fileList.splice(previewIndex, 1).length > 0) {
+            deleteFile(index: number, file: File): boolean {
+                if (index >= 0) {
+                    const fileSize: number = this.fileList[index].size;
+                    if (this.fileList.splice(index, 1).length > 0) {
                         this.filesTotalSizeBytes = this.filesTotalSizeBytes - fileSize;
+                        this._successDeleteFile(file.name)
                         return true;
                     } else {
                         return false;
@@ -109,7 +111,7 @@
                     return false;
                 }
             },
-            _removeFiles(): void {
+            _deleteFiles(): void {
                 this.fileList = [];
             },
             _isFileValid(file: File): boolean {
@@ -158,12 +160,21 @@
                 }
             },
             _successAddFiles(fileNames: string[]): void {
-                let detail: string = fileNames.length > 1 ? fileNames.length + " files were" : fileNames + " was";
-                let detailTrail: string = " added successfully";
+                let detail: string = fileNames.length > 1 ? fileNames.length + " files" : fileNames.toString();
+                let detailTrail: string = " added";
                 this.toast.add({
                     severity: "success",
                     summary: "Success!",
                     detail: detail + detailTrail,
+                    life: 10000
+                });
+            },
+            _successDeleteFile(fileName: string): void {
+                let detail: string = fileName + " deleted";
+                this.toast.add({
+                    severity: "success",
+                    summary: "Success!",
+                    detail: detail,
                     life: 10000
                 });
             },
