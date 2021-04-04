@@ -13,15 +13,15 @@ import java.util.stream.Collectors;
 @Service
 public class ImageService {
 
-    @Value("http://${server.datasource.address}:${server.datasource.port}/images/")
+    @Value("http://${database.address}:${database.port}/images/")
     private String BASE_URL;
 
     private final RestTemplate restTemplate = new RestTemplate();
 
     public List<Image> get() {
         return Arrays
-                .stream(Objects.requireNonNull(restTemplate.getForObject(BASE_URL, Image[].class)))
-                .collect(Collectors.toList());
+            .stream(Objects.requireNonNull(restTemplate.getForObject(BASE_URL, Image[].class)))
+            .collect(Collectors.toList());
     }
 
     public Image get(long id) {

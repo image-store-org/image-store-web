@@ -3,9 +3,13 @@ import com.vartdalen.imagestoreweb.model.Image;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import com.vartdalen.imagestoreweb.service.BlobService;
 import com.vartdalen.imagestoreweb.service.ImageService;
 
 import javax.validation.ValidationException;
+
+import java.io.ByteArrayInputStream;
 import java.util.Comparator;
 import java.util.List;
 
@@ -14,9 +18,11 @@ import java.util.List;
 public class ImageController {
 
     private final ImageService imageService;
+    private final BlobService blobService;
 
-    public ImageController(ImageService imageService) {
+    public ImageController(ImageService imageService, BlobService blobService) {
         this.imageService = imageService;
+        this.blobService = blobService;
     }
 
     @ResponseBody
@@ -44,7 +50,14 @@ public class ImageController {
     @ResponseBody
     @PostMapping("")
     public ResponseEntity<Image> post(@RequestBody Image image) {
-        return new ResponseEntity<>(imageService.post(image), HttpStatus.OK);
+        Image response = imageService.post(image);
+        try {
+            blobService.post(response.getId(), new ByteArrayInputStream(image.getBytes()), image.getBytes().length);
+        } catch (Exception e) {
+            imageService.delete(response.getId());
+            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+        return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
     @ResponseBody
@@ -62,6 +75,7 @@ public class ImageController {
     @ResponseBody
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable long id) {
+        blobService.delete(id);
         imageService.delete(id);
         return ResponseEntity.noContent().build();
     }
