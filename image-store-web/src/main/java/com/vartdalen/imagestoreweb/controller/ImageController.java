@@ -1,6 +1,5 @@
 package com.vartdalen.imagestoreweb.controller;
 import com.vartdalen.imagestoreweb.model.Image;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,24 +23,33 @@ public class ImageController {
 
     @ResponseBody
     @GetMapping("")
-    public ResponseEntity<List<Image>> get() { return new ResponseEntity<>(imageService.get(), HttpStatus.OK); }
+    public ResponseEntity<List<Image>> get() {
+        List<Image> response = imageService.get();
+        return ResponseEntity
+            .ok()
+            .body(response);
+    }
 
     @ResponseBody
     @GetMapping("/{id}")
     public ResponseEntity<Image> get(@PathVariable long id) {
-        return new ResponseEntity<>(imageService.get(id), HttpStatus.OK);
+        Image response = imageService.get(id);
+        return ResponseEntity
+            .ok()
+            .body(response);
     }
 
     @SuppressWarnings("OptionalGetWithoutIsPresent")
     @ResponseBody
     @GetMapping("/latest")
     public ResponseEntity<Image> getLatest() {
-        return new ResponseEntity<>(imageService
-                .get()
-                .stream()
-                .max(Comparator.comparing(Image::getCreated))
-                .get(),
-                HttpStatus.OK);
+        Image response = imageService.get()
+            .stream()
+            .max(Comparator.comparing(Image::getCreated))
+            .get();
+        return ResponseEntity
+            .ok()
+            .body(response);
     }
 
     @ResponseBody
@@ -49,15 +57,19 @@ public class ImageController {
     public ResponseEntity<Image> post(@RequestBody Image image) {
         Image response = imageService.post(image);
         blobService.post(response.getId(), image.getBytes(), image.getBytes().length);
-        return new ResponseEntity<>(response, HttpStatus.OK);
+        return ResponseEntity
+            .ok()
+            .body(response);
     }
 
     @ResponseBody
     @PutMapping("/{id}")
     public ResponseEntity<Void> put(@PathVariable long id, @RequestBody Image image) {
-        ImageValidation.validatePut(image);
+        ImageValidation.validateForPut(image);
         imageService.put(id, image);
-        return new ResponseEntity<>(HttpStatus.OK);
+        return ResponseEntity
+            .ok()
+            .build();
     }
 
     @ResponseBody
@@ -65,6 +77,8 @@ public class ImageController {
     public ResponseEntity<Void> delete(@PathVariable long id) {
         blobService.delete(id);
         imageService.delete(id);
-        return ResponseEntity.noContent().build();
+        return ResponseEntity
+            .noContent()
+            .build();
     }
 }
