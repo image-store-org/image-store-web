@@ -8,6 +8,7 @@ import com.vartdalen.imagestoreweb.service.ImageService;
 import com.vartdalen.imagestoreweb.validation.ImageValidation;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/images")
@@ -54,12 +55,17 @@ public class ImageController {
 
     @ResponseBody
     @PostMapping("")
-    public ResponseEntity<Image> post(@RequestBody Image image) {
-        Image response = imageService.post(image);
-        blobService.post(response.getId(), image.getBytes(), image.getBytes().length);
+    public ResponseEntity<List<Image>> post(@RequestBody List<Image> images) {
+        List<Image> responses = images.stream()
+            .map(x -> {
+                Image response = imageService.post(x);
+                response.setBytes(x.getBytes());
+                blobService.post(response);
+                return response;
+            }).collect(Collectors.toList());
         return ResponseEntity
             .ok()
-            .body(response);
+            .body(responses);
     }
 
     @ResponseBody
@@ -75,7 +81,7 @@ public class ImageController {
     @ResponseBody
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable long id) {
-        blobService.delete(id);
+        blobService.delete(get(id).getBody());
         imageService.delete(id);
         return ResponseEntity
             .noContent()

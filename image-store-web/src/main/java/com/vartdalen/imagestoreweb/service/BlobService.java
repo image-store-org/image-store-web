@@ -3,6 +3,7 @@ import com.azure.storage.blob.BlobContainerAsyncClient;
 import com.azure.storage.blob.BlobServiceClientBuilder;
 import com.azure.storage.blob.models.ParallelTransferOptions;
 import com.azure.storage.common.StorageSharedKeyCredential;
+import com.vartdalen.imagestoreweb.model.Image;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -29,21 +30,31 @@ public class BlobService {
             .getBlobContainerAsyncClient(CONTAINER_NAME);
     }
 
-    public void post(long id, byte[] bytes, long length) {
-        ParallelTransferOptions parallelTransferOptions = new ParallelTransferOptions()
-            .setBlockSizeLong(length)
-            .setMaxConcurrency(5);
-        Flux<ByteBuffer> flux = Flux.just(ByteBuffer.wrap(bytes));
+    public void post(Image image) {
         blobContainerAsyncClient
-            .getBlobAsyncClient(id + ".jpg")
-            .upload(flux, parallelTransferOptions)
+            .getBlobAsyncClient(createBlobName(image))
+            .upload(createFlux(image.getBytes()), createTransferOptions((long)image.getBytes().length))
             .subscribe();
     }
 
-    public void delete(long id) {
+    public void delete(Image image) {
         blobContainerAsyncClient
-            .getBlobAsyncClient(id + ".jpg")
+            .getBlobAsyncClient(createBlobName(image))
             .delete()
             .subscribe();
+    }
+    
+    private String createBlobName(Image image) {
+        return image.getId() + "." + image.getExtension().toString().toLowerCase();
+    }
+
+    private Flux<ByteBuffer> createFlux(byte[] bytes) {
+        return Flux.just(ByteBuffer.wrap(bytes));
+    }
+
+    private ParallelTransferOptions createTransferOptions(Long blockSize) {
+        return new ParallelTransferOptions()
+            .setBlockSizeLong(blockSize)
+            .setMaxConcurrency(5);
     }
 }
