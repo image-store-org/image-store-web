@@ -24,31 +24,35 @@ public class Image {
     private Set<ImageCategory> categories;
 
     @NotNull
-    private ImageExtension imageExtension;
+    private ImageExtension extension;
+
+    private byte[] bytes;
 
     private LocalDateTime created;
 
     public Image() {}
 
-    public Image(long id, String title, ImageOrientation orientation, ImageCategory[] categories, ImageExtension imageExtension) {
+    public Image(long id, String title, ImageOrientation orientation, ImageCategory[] categories, ImageExtension extension) {
         this.id = id;
         this.title = title;
         this.orientation = orientation;
         this.categories = new HashSet<>(Arrays.asList(categories));
-        this.imageExtension = imageExtension;
+        this.extension = extension;
     }
 
     public long getId() { return id; }
     public String getTitle() { return title; }
     public ImageOrientation getOrientation() { return orientation; }
     public Set<ImageCategory> getCategories() { return categories; }
-    public ImageExtension getImageExtension() { return imageExtension; }
+    public ImageExtension getExtension() { return extension; }
+    public byte[] getBytes() { return bytes; }
     public LocalDateTime getCreated() { return created; }
 
     public void setId(long id) { this.id = id; }
     public void setTitle(String title) { this.title = title; }
     public void setOrientation(ImageOrientation orientation) { this.orientation = orientation; }
     public void setCategories(ImageCategory[] categories) { this.categories = new HashSet<>(Arrays.asList(categories)); }
-    public void setImageExtension(ImageExtension imageExtension) { this.imageExtension = imageExtension; }
+    public void setExtension(ImageExtension extension) { this.extension = extension; }
+    public void setBytes(byte[] bytes) { this.bytes = bytes; }
 }
 
