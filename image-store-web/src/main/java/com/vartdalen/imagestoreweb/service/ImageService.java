@@ -29,9 +29,9 @@ public class ImageService {
     }
 
     public Image post(Image image) {
-        ResponseEntity<Image> response;
-        response = restTemplate.postForEntity(BASE_URL, image, Image.class);
-        return response.getBody();
+        return restTemplate
+            .postForEntity(BASE_URL, image, Image.class)
+            .getBody();
     }
 
     public void put(long id, Image image) { restTemplate.put(BASE_URL+id, image); }
