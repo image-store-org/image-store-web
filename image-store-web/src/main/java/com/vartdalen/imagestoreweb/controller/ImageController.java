@@ -6,10 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 import com.vartdalen.imagestoreweb.service.BlobService;
 import com.vartdalen.imagestoreweb.service.ImageService;
-
-import javax.validation.ValidationException;
-
-import java.io.ByteArrayInputStream;
+import com.vartdalen.imagestoreweb.validation.ImageValidation;
 import java.util.Comparator;
 import java.util.List;
 
@@ -51,23 +48,14 @@ public class ImageController {
     @PostMapping("")
     public ResponseEntity<Image> post(@RequestBody Image image) {
         Image response = imageService.post(image);
-        try {
-            blobService.post(response.getId(), new ByteArrayInputStream(image.getBytes()), image.getBytes().length);
-        } catch (Exception e) {
-            imageService.delete(response.getId());
-            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
-        }
+        blobService.post(response.getId(), image.getBytes(), image.getBytes().length);
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
     @ResponseBody
     @PutMapping("/{id}")
     public ResponseEntity<Void> put(@PathVariable long id, @RequestBody Image image) {
-        if (image.getId() > 0) { 
-            throw new ValidationException(
-                String.format("Value '%s' of field 'id' is invalid. Expected: null", image.getId())
-            );
-        }
+        ImageValidation.validatePut(image);
         imageService.put(id, image);
         return new ResponseEntity<>(HttpStatus.OK);
     }

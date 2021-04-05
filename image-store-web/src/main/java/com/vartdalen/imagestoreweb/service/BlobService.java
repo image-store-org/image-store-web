@@ -1,19 +1,20 @@
 package com.vartdalen.imagestoreweb.service;
-import com.azure.storage.blob.BlobContainerClient;
+import com.azure.storage.blob.BlobContainerAsyncClient;
 import com.azure.storage.blob.BlobServiceClientBuilder;
-import com.azure.storage.blob.models.BlobItem;
+import com.azure.storage.blob.models.ParallelTransferOptions;
 import com.azure.storage.common.StorageSharedKeyCredential;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import java.io.InputStream;
-import java.util.List;
-import java.util.stream.Collectors;
+
+import reactor.core.publisher.Flux;
+
+import java.nio.ByteBuffer;
 
 @Service
 public class BlobService {
-    private final BlobContainerClient blobContainerClient;
+    private final BlobContainerAsyncClient blobContainerAsyncClient;
 
     @Autowired
     public BlobService( @Value("https://${azure.blob-storage.address}") String BASE_URL,
@@ -21,29 +22,28 @@ public class BlobService {
                         @Value("${azure.blob-storage.account.key}") String ACCOUNT_KEY,
                         @Value("${azure.blob-storage.container.name}") String CONTAINER_NAME
                         ) {
-        this.blobContainerClient = new BlobServiceClientBuilder()
+        this.blobContainerAsyncClient = new BlobServiceClientBuilder()
             .endpoint(BASE_URL)
             .credential(new StorageSharedKeyCredential(ACCOUNT_NAME, ACCOUNT_KEY))
-            .buildClient()
-            .getBlobContainerClient(CONTAINER_NAME);
+            .buildAsyncClient()
+            .getBlobContainerAsyncClient(CONTAINER_NAME);
     }
 
-    public List<BlobItem> get() {
-        return blobContainerClient
-            .listBlobs()
-            .stream()
-            .collect(Collectors.toList());
-    }
-
-    public void post(long id, InputStream data, long length) {
-        blobContainerClient
-            .getBlobClient(id + ".jpg")
-            .upload(data, length);
+    public void post(long id, byte[] bytes, long length) {
+        ParallelTransferOptions parallelTransferOptions = new ParallelTransferOptions()
+            .setBlockSizeLong(length)
+            .setMaxConcurrency(5);
+        Flux<ByteBuffer> flux = Flux.just(ByteBuffer.wrap(bytes));
+        blobContainerAsyncClient
+            .getBlobAsyncClient(id + ".jpg")
+            .upload(flux, parallelTransferOptions)
+            .subscribe();
     }
 
     public void delete(long id) {
-        blobContainerClient
-            .getBlobClient(id + ".jpg")
-            .delete();
+        blobContainerAsyncClient
+            .getBlobAsyncClient(id + ".jpg")
+            .delete()
+            .subscribe();
     }
 }

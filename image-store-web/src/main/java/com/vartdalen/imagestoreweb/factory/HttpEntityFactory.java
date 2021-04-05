@@ -6,10 +6,10 @@ import org.springframework.http.MediaType;
 
 public class HttpEntityFactory {
 
-    public static <T> HttpEntity<T> createPost(T body) {
+    public static <T> HttpEntity<T> create(T body) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         return new HttpEntity<T>(body, headers);
     }
-    
+
 }
