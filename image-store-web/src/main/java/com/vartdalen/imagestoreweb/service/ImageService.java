@@ -1,7 +1,7 @@
 package com.vartdalen.imagestoreweb.service;
+import com.vartdalen.imagestoreweb.factory.HttpEntityFactory;
 import com.vartdalen.imagestoreweb.model.Image;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -13,15 +13,15 @@ import java.util.stream.Collectors;
 @Service
 public class ImageService {
 
-    @Value("http://${server.datasource.address}:${server.datasource.port}/images/")
+    @Value("http://${database.address}:${database.port}/images/")
     private String BASE_URL;
 
     private final RestTemplate restTemplate = new RestTemplate();
 
     public List<Image> get() {
         return Arrays
-                .stream(Objects.requireNonNull(restTemplate.getForObject(BASE_URL, Image[].class)))
-                .collect(Collectors.toList());
+            .stream(Objects.requireNonNull(restTemplate.getForObject(BASE_URL, Image[].class)))
+            .collect(Collectors.toList());
     }
 
     public Image get(long id) {
@@ -29,12 +29,14 @@ public class ImageService {
     }
 
     public Image post(Image image) {
-        ResponseEntity<Image> response;
-        response = restTemplate.postForEntity(BASE_URL, image, Image.class);
-        return response.getBody();
+        return restTemplate
+            .postForEntity(BASE_URL, HttpEntityFactory.create(image), Image.class)
+            .getBody();
     }
 
-    public void put(long id, Image image) { restTemplate.put(BASE_URL+id, image); }
+    public void put(long id, Image image) { 
+        restTemplate.put(BASE_URL+id, HttpEntityFactory.create(image));
+    }
 
     public void delete(long id) {
         restTemplate.delete(BASE_URL+id);
